@@ -51,6 +51,7 @@ const jobHidder = () =>{
             <li><a target="_blank" href="http://naturecheremisin.zzz.com.ua/">naturecheremisin.zzz.com.ua</a></li>
             <li><a target="_blank" href="http://metinvestcheremisin.zzz.com.ua/">metinvestcheremisin.zzz.com.ua</a>/</li>
             <li><a target="_blank" href="http://cheremisintest.ho.ua/">cheremisintest.ho.ua</a></li>
+            <li><a target="_blank" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git данного демо </a></li>
         </ul>
     </div>
 </div>

@@ -1,0 +1,21 @@
+*{
+  font-size: 9px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Akaya Telivigala', cursive;
+
+}
+a{
+  text-decoration: none;
+}
+
+::selection{
+  background-color: teal;
+}
+@import "_head";
+@import "_todolist";
+@import "_tasklist";
+@import "_fetch";
+@import "_calc";
+@import "_app";

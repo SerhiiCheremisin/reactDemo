@@ -1,0 +1,45 @@
+nav{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  background-image: linear-gradient(to right, teal , #003380);
+
+  ul{
+    display: flex;
+    flex-direction: row;
+
+    li{
+      list-style: none;
+      margin-right: 2rem;
+      transition: all 0.4s ease;
+      transform: scale(1) skewY(0);
+      a{
+        font-size: 3rem;
+        color: black;
+      }
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.07) skewY(5deg);
+      }
+      &:active{
+        transform: scale(1) skewY(-5deg)
+      }
+    }
+  }
+  span{
+    align-self: start;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    a{
+      font-size:2rem;
+      color: black;
+      transition: .4s ease;
+      &:hover{
+        letter-spacing: 1rem;
+      }
+    }
+  }
+}

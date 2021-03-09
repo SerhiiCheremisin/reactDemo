@@ -1,0 +1,474 @@
+* {
+  font-size: 9px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background-color: teal;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  background-image: linear-gradient(to right, teal, #003380);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 2rem;
+  transition: all 0.4s ease;
+  transform: scale(1) skewY(0);
+}
+nav ul li a {
+  font-size: 3rem;
+  color: black;
+}
+nav ul li:hover {
+  cursor: pointer;
+  transform: scale(1.07) skewY(5deg);
+}
+nav ul li:active {
+  transform: scale(1) skewY(-5deg);
+}
+nav span {
+  align-self: start;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+nav span a {
+  font-size: 2rem;
+  color: black;
+  transition: 0.4s ease;
+}
+nav span a:hover {
+  letter-spacing: 1rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+form input {
+  height: 5rem;
+  width: 50rem;
+  font-size: 3rem;
+}
+form button {
+  margin-left: 1rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to right, teal, #003380);
+  color: aliceblue;
+}
+form button:hover {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  transform: scale(1);
+}
+form button:active {
+  transform: scale(0.9);
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  margin-top: 1%;
+}
+.tasks li {
+  display: flex;
+  font-size: 4rem;
+}
+
+.importantTask {
+  color: red;
+  font-weight: bold;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10%;
+  width: 53%;
+}
+.taskContainer liContainer {
+  display: flex;
+}
+.taskContainer .buttons {
+  display: flex;
+}
+.taskContainer .buttons .deleteTask {
+  width: 7rem;
+  height: 3rem;
+  margin-right: 1rem;
+  background-image: linear-gradient(to right, teal, #003380);
+  color: aliceblue;
+  transition: 0.3s ease;
+  transform: scale(1);
+}
+.taskContainer .buttons .deleteTask:hover {
+  cursor: pointer;
+}
+.taskContainer .buttons .deleteTask:active {
+  transform: scale(0.95);
+}
+.taskContainer .buttons .makeAsImportant {
+  width: 7rem;
+  height: 3rem;
+  background-image: linear-gradient(to right, teal, #003380);
+  color: aliceblue;
+}
+.taskContainer .buttons .makeAsImportant:hover {
+  cursor: pointer;
+}
+.taskContainer .buttons .makeAsImportant:active {
+  transform: scale(0.95);
+}
+.taskContainer .importantTask {
+  color: red;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.buttons .deleteTask {
+  width: 7rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.buttons .makeAsImportant {
+  width: 7rem;
+  height: 3rem;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.slider .left {
+  width: 10rem;
+  height: 50rem;
+  font-size: 1rem;
+  transition: all 0.4s;
+  transform: rotateX(0) rotateY(0);
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, teal, #003380);
+}
+.slider .left:hover {
+  cursor: pointer;
+  color: red;
+  background-color: aqua;
+}
+.slider .left:active {
+  transform: rotateX(35deg) rotateY(180deg);
+}
+.slider .right {
+  width: 10rem;
+  height: 50rem;
+  font-size: 1rem;
+  transition: all 0.4s;
+  transform: rotateX(0) rotateY(0);
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to left, teal, #003380);
+}
+.slider .right:hover {
+  cursor: pointer;
+  color: red;
+  background-color: aqua;
+}
+.slider .right:active {
+  transform: rotateX(35deg) rotateY(-180deg);
+}
+.slider .slider-body {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+.slider .slider-body .name {
+  margin-top: 1%;
+  font-size: 5rem;
+}
+.slider .slider-body .email {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.slider .slider-body .phone {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.slider .slider-body .website {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.slider .slider-body .address {
+  margin-bottom: 1rem;
+}
+.slider .slider-body .address ul li {
+  list-style: none;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.calcWrapper {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  padding-top: 3%;
+}
+.calcWrapper .calculator {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.calcWrapper .calculator .calculator__result {
+  height: 15%;
+  border-bottom: 1px solid black;
+  background-image: linear-gradient(to right, teal, #003380);
+}
+.calcWrapper .calculator .calculator__result .resImp {
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+}
+.calcWrapper .calculator .calculator__buttons {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+}
+.calcWrapper .calculator .calculator__buttons .calculator__buttons--first-line, .calcWrapper .calculator .calculator__buttons .calculator__buttons--second-line, .calcWrapper .calculator .calculator__buttons .calculator__buttons--third-line, .calcWrapper .calculator .calculator__buttons .calculator__buttons--final-line {
+  width: 100%;
+  height: 25%;
+}
+.calcWrapper .calculator .calculator__buttons button {
+  width: 20%;
+  margin: 1rem 2rem;
+  height: 80%;
+  font-size: 5rem;
+  transition: 0.5s ease;
+  transform: scale(1);
+}
+.calcWrapper .calculator .calculator__buttons button:hover {
+  cursor: pointer;
+}
+.calcWrapper .calculator .calculator__buttons button:active {
+  transform: scale(0.9);
+  background-color: teal;
+}
+.calcWrapper .calculator .calculator__buttons--input {
+  height: 10%;
+}
+.calcWrapper .calculator .calculator__buttons--input input {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  outline: none;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.resume-block {
+  display: flex;
+  height: 90vh;
+}
+.resume-block__left {
+  display: flex;
+  width: 30%;
+  background-color: #003e79;
+  flex-direction: column;
+}
+.resume-block__left .u--lists ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+.resume-block__left .u--lists ul li {
+  font-size: 2rem;
+  color: aliceblue;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.resume-block__left .u--lists ul li a {
+  color: aliceblue;
+  font-size: 2rem;
+  transition: 0.4s ease;
+}
+.resume-block__left .u--lists ul li a:hover {
+  cursor: pointer;
+  color: teal;
+  letter-spacing: 0.2rem;
+}
+.resume-block__left .u--lists ul li i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.resume-block__right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.resume-block__right--top {
+  display: flex;
+  margin-top: 1%;
+  height: 28.5vh;
+}
+.resume-block__right--top .name {
+  width: 25%;
+  padding-left: 4rem;
+  padding-top: 10rem;
+}
+.resume-block__right--top .name h1 {
+  font-size: 3rem;
+}
+.resume-block__right--top .age-loc {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-left: 4rem;
+  padding-top: 10rem;
+}
+.resume-block__right--top .age-loc .location {
+  font-size: 3rem;
+}
+.resume-block__right--top .age-loc .location i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.resume-block__right--top .age-loc .age {
+  font-size: 3rem;
+}
+.resume-block__right--top .age-loc .age i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.resume-block__right--top .photo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.resume-block__right--top .photo .photo-block {
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url("../img/imgonline-com-ua-Resize-IEehRDT8OQ.jpg");
+  background-position: right 53% bottom 72%;
+}
+.resume-block__right .years {
+  display: flex;
+  align-self: center;
+  font-size: 2rem;
+}
+.resume-block__right .have-jobs strong {
+  font-size: 2rem;
+}
+.resume-block__right .have-jobs ul {
+  margin-left: 5rem;
+  transition: 0.4s ease;
+}
+.resume-block__right .have-jobs ul:hover {
+  cursor: pointer;
+}
+.resume-block__right .have-jobs ul li {
+  list-style: none;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.resume-block__right .hidden-jobs-wrapper--hidden {
+  display: none;
+}
+.resume-block__right .hidden-jobs-wrapper {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 22;
+  background-image: linear-gradient(to right, teal, #003380);
+  width: 100%;
+  height: 90vh;
+  animation: 0.4s ease;
+  animation-name: scale-up;
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs {
+  position: relative;
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs button {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  background-color: red;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.5rem;
+  color: aliceblue;
+  transition: all 0.4s ease;
+  outline: none;
+  transform: scale(1);
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs button:hover {
+  cursor: pointer;
+  background-color: brown;
+  color: aliceblue;
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs button:active {
+  transform: scale(0.95);
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs .years {
+  display: flex;
+  margin-left: 42%;
+  font-size: 2rem;
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs .have-jobs strong {
+  font-size: 2rem;
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs .have-jobs ul {
+  margin-left: 5rem;
+}
+.resume-block__right .hidden-jobs-wrapper .hidden-jobs .have-jobs ul li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+.resume-block .wrap-block {
+  background-color: #008080;
+  height: 3rem;
+  font-size: 2rem;
+  color: aliceblue;
+  text-align: center;
+}
+.resume-block .wrap-block i {
+  font-size: 2rem;
+}
+.resume-block .isClickable {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

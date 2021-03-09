@@ -1,0 +1,51 @@
+form{
+  display: flex;
+  justify-content: center;
+  margin-top:10%;
+
+   input{
+     height: 5rem;
+     width: 50rem;
+     font-size: 3rem;
+
+  }
+
+   button{
+     margin-left: 1rem;
+     width: 10rem;
+     font-size: 1.5rem;
+     background-image: linear-gradient(to right, teal , #003380);
+     color: aliceblue;
+      &:hover{
+        cursor: pointer;
+        transition: all .4s ease;
+        transform: scale(1);
+   }
+      &:active{
+        transform: scale(0.9);
+      }
+
+  }
+
+}
+.tasks{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  margin-top: 1%;
+  li{
+    display: flex;
+    font-size: 4rem;
+  }
+
+}
+
+.importantTask{
+  color: red;
+  font-weight: bold;
+}
+
+
+
+
+

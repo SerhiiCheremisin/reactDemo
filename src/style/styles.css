@@ -35,10 +35,12 @@ nav ul li {
 nav ul li a {
   font-size: 3rem;
   color: black;
+  border-bottom: 0 solid red;
 }
 nav ul li:hover {
   cursor: pointer;
   transform: scale(1.07) skewY(5deg);
+  border-bottom: 2px solid red;
 }
 nav ul li:active {
   transform: scale(1) skewY(-5deg);
@@ -168,7 +170,7 @@ form button:active {
   width: 10rem;
   height: 50rem;
   font-size: 1rem;
-  transition: all 0.4s;
+  transition: all 0.2s;
   transform: rotateX(0) rotateY(0);
   outline: none;
   border: none;
@@ -186,7 +188,7 @@ form button:active {
   width: 10rem;
   height: 50rem;
   font-size: 1rem;
-  transition: all 0.4s;
+  transition: all 0.2s;
   transform: rotateX(0) rotateY(0);
   outline: none;
   border: none;
@@ -368,11 +370,12 @@ form button:active {
   width: 50%;
   display: flex;
   justify-content: center;
+  border: none;
 }
 .resume-block__right--top .photo .photo-block {
   width: 30%;
-  height: 100%;
-  border-radius: 50%;
+  height: 95%;
+  border-radius: 10%;
   background-image: url("../img/imgonline-com-ua-Resize-IEehRDT8OQ.jpg");
   background-position: right 53% bottom 72%;
 }

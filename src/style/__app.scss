@@ -84,15 +84,17 @@ ul{
     width: 50%;
     display: flex;
     justify-content: center;
-    .photo-block{
+    border: none;
+
+      .photo-block{
       width: 30%;
-      height: 100%;
-      border-radius: 50%;
+      height: 95%;
+      border-radius: 10%;
       background-image: url("../img/imgonline-com-ua-Resize-IEehRDT8OQ.jpg");
       background-position: right 53% bottom 72%;
-
     }
-  }
+
+     }
 
 }
    .years{

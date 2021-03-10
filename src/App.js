@@ -71,9 +71,9 @@ const jobHidder = () =>{
     </div>
 </div>
 <div className="photo">
-<div className="photo-block">
+    <div className="photo-block">
+    </div>
 
-</div>
 </div>
 
 

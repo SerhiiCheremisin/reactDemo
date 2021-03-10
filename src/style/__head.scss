@@ -18,10 +18,12 @@ nav{
       a{
         font-size: 3rem;
         color: black;
+        border-bottom: 0 solid red;
       }
       &:hover{
         cursor: pointer;
         transform: scale(1.07) skewY(5deg);
+        border-bottom: 2px solid red;
       }
       &:active{
         transform: scale(1) skewY(-5deg)

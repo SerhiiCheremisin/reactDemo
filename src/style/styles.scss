@@ -1,13 +1,63 @@
+
 *{
-  font-size: 9px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Akaya Telivigala', cursive;
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 768px) {
+    font-size: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {
+    font-size: 7px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+
+  }
+
+  @media only screen
+  and (min-width : 1024px) {
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+
+  }
 
 }
 a{
   text-decoration: none;
+}
+
+.dark-theme{
+  background-color: black;
+  color: white;
+  height: 90vh;
+  padding-top: 2%;
+
+}
+.light-theme{
+  background-color: white;
+  color: black;
+  height: 90vh;
+  padding-top: 2%;
+}
+
+.b-inactive{
+  background-color: red;
+}
+.b-active{
+  background-color: green;
+}
+.just-b{
+  background-image: linear-gradient(to right, teal , #003380);
 }
 
 ::selection{
@@ -19,3 +69,7 @@ a{
 @import "_fetch";
 @import "_calc";
 @import "_app";
+@import "_timer";
+@import "_404";
+@import "_timerList";
+@import "_resume";

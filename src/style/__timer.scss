@@ -1,0 +1,83 @@
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px) {
+  .timer-list{
+    ul{
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+  }
+  form{
+
+    input{
+
+    }
+    button{
+      &:hover{
+
+      }
+      i{
+        font-size: 3rem;
+      }
+    }
+  }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .timer-list{
+    ul{
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+  }
+  form{
+
+    input{
+
+    }
+    button{
+      &:hover{
+
+      }
+      i{
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+
+@media only screen
+and (min-width : 1025px) {
+.timer-list{
+  ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 3rem;
+      }
+}
+form{
+
+input{
+
+}
+  button{
+&:hover{
+
+}
+    i{
+      font-size: 3rem;
+    }
+
+  }
+
+}
+
+}

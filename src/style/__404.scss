@@ -1,0 +1,50 @@
+.error-page{
+  display: flex;
+  justify-content: center;
+
+.arrow{
+  display: flex;
+  color: red;
+  margin-top: 3rem;
+  animation: ease infinite 2s arrow;
+
+  @keyframes arrow {
+    0%{
+      margin-top: 3rem;
+    }
+    25%{
+      margin-top: .5rem;
+    }
+    75%{
+      margin-top: 5rem;
+    }
+    100%{
+      margin-top: 3rem;
+    }
+
+  }
+
+  i{
+    font-size: 10rem;
+  }
+
+
+}
+  .hs{
+    margin: 2rem 10rem;
+    h1{
+      display: flex;
+      justify-content: center;
+      font-size: 5rem;
+
+
+    }
+    h2{
+      display: flex;
+      justify-content: center;
+      font-size: 5rem;
+    }
+  }
+
+
+}

@@ -1,49 +1,158 @@
 .taskContainer{
-  display: flex;
- justify-content: space-between;
-  margin-left: -10%;
-width: 53%;
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-  liContainer{
-display: flex;
 
-  }
-  .buttons{
-display: flex;
+    .liContainer{
+      display: flex;
+      width: 80%;
+    }
+    .buttons{
+      display: flex;
+      margin-left: -25%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      .deleteTask{
+        width: 15rem;
+        height: 5rem;
+        font-size: 3rem;
+        margin-right: 1rem;
+        background-image: linear-gradient(to right, teal , #003380);
+        color: aliceblue;
+        transition: .3s ease;
+        transform: scale(1);
 
-    .deleteTask{
-      width: 7rem;
-      height: 3rem;
-      margin-right: 1rem;
-      background-image: linear-gradient(to right, teal , #003380);
-      color: aliceblue;
-      transition: .3s ease;
-      transform: scale(1);
-      &:hover{
-        cursor: pointer;
       }
-      &:active{
-        transform: scale(0.95);
+
+      .makeAsImportant{
+        width: 15rem;
+        height: 5rem;
+        font-size: 3rem;
+        background-image: linear-gradient(to right, teal , #003380);
+        color: aliceblue;
+
       }
     }
 
-    .makeAsImportant{
-      width: 7rem;
-      height: 3rem;
-      background-image: linear-gradient(to right, teal , #003380);
-      color: aliceblue;
-      &:hover{
-        cursor: pointer;
+    .importantTask{
+      color: red;
+      font-weight: bold;
+    }
+
+  }
+
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    .liContainer{
+      display: flex;
+      width: 80%;
+    }
+    .buttons{
+      display: flex;
+      margin-left: -5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      .deleteTask{
+        width: 15rem;
+        height: 5rem;
+        font-size: 3rem;
+        margin-right: 1rem;
+        background-image: linear-gradient(to right, teal , #003380);
+        color: aliceblue;
+        transition: .3s ease;
+        transform: scale(1);
       }
-      &:active{
-        transform: scale(0.95);
+
+      .makeAsImportant{
+        width: 15rem;
+        height: 5rem;
+        font-size: 3rem;
+        background-image: linear-gradient(to right, teal , #003380);
+        color: aliceblue;
+
       }
+    }
+
+    .importantTask{
+      color: red;
+      font-weight: bold;
     }
   }
 
-  .importantTask{
-    color: red;
-    font-weight: bold;
+
+  @media only screen
+  and (min-width : 1025px) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10%;
+    width: 53%;
+
+    .liContainer{
+      display: flex;
+
+    }
+    .buttons{
+      display: flex;
+      .deleteTask{
+        width: 7rem;
+        height: 3rem;
+        margin-right: 1rem;
+        background-image: linear-gradient(to right, teal , #003380);
+        color: aliceblue;
+        transition: .3s ease;
+        transform: scale(1);
+        &:hover{
+          cursor: pointer;
+        }
+        &:active{
+          transform: scale(0.95);
+        }
+      }
+
+      .makeAsImportant{
+        width: 7rem;
+        height: 3rem;
+        background-image: linear-gradient(to right, teal , #003380);
+        color: aliceblue;
+        &:hover{
+          cursor: pointer;
+        }
+        &:active{
+          transform: scale(0.95);
+        }
+      }
+    }
+
+    .importantTask{
+      color: red;
+      font-weight: bold;
+    }
+    .buttons{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      .deleteTask{
+        width: 7rem;
+        height: 3rem;
+        margin-right: 1rem;
+      }
+
+      .makeAsImportant{
+        width: 7rem;
+        height: 3rem;
+      }
+    }
   }
 
 
@@ -54,20 +163,5 @@ display: flex;
 
 
 
-.buttons{
-  display: flex;
-  justify-content: end;
-  align-items: center;
 
-  .deleteTask{
-    width: 7rem;
-    height: 3rem;
-    margin-right: 1rem;
-  }
-
-  .makeAsImportant{
-    width: 7rem;
-    height: 3rem;
-  }
-}
 

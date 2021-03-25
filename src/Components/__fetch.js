@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
 
-function Fetch() {
+function Fetch({darkTheme,lightTheme}) {
 const [users, setUsers] = useState([])
 const [userId, setUserId] = useState(0)
 
@@ -39,7 +39,7 @@ console.log(userId);
 
 
     return(
-<>
+<div className={lightTheme === true ? "light-theme" : "dark-theme"}>
   <div className="slider">
     <button onClick={leftHandler} className="left"><i className="fas fa-chevron-left"></i></button>
 <div className="slider-body">
@@ -80,7 +80,7 @@ console.log(userId);
 
   </div>
 
-</>
+</div>
     )
 }
 

@@ -1,0 +1,163 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px) {
+  .li-timer{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    .name{
+      font-size: 3rem;
+    }
+    .timerValue{
+      display: flex;
+
+      .hours{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      .minutes{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      .seconds{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+
+    }
+
+    .buttons-wrapper{
+      display: flex;
+      flex-direction: column;
+      button{
+        width: 5rem;
+        height: 3rem;
+        outline: none;
+        margin-right: 1rem;
+        color: aliceblue;
+        transform: scale(1);
+        transition: all .5s ease;
+        &:hover{
+          cursor: pointer;
+        }
+        &:active{
+          transform: scale(.95);
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .li-timer{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 3%;
+    .name{
+      font-size: 3rem;
+    }
+    .timerValue{
+      display: flex;
+
+      .hours{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      .minutes{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      .seconds{
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+
+    }
+
+    .buttons-wrapper{
+      display: flex;
+      flex-direction: column;
+      button{
+        width: 5rem;
+        height: 3rem;
+        outline: none;
+        margin-right: 1rem;
+        color: aliceblue;
+        transform: scale(1);
+        transition: all .5s ease;
+        &:hover{
+          cursor: pointer;
+        }
+        &:active{
+          transform: scale(.95);
+        }
+      }
+    }
+
+  }
+}
+
+
+@media only screen
+and (min-width : 1025px) {
+
+.li-timer{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 80%;
+  .name{
+    font-size: 3rem;
+  }
+  .timerValue{
+    display: flex;
+
+   .hours{
+     font-size: 3rem;
+     margin-right: 2rem;
+   }
+   .minutes{
+     font-size: 3rem;
+     margin-right: 2rem;
+   }
+   .seconds{
+     font-size: 3rem;
+     margin-right: 2rem;
+}
+
+  }
+
+  .buttons-wrapper{
+    button{
+     width: 5rem;
+     height: 3rem;
+     outline: none;
+     margin-right: 1rem;
+     color: aliceblue;
+     transform: scale(1);
+     transition: all .5s ease;
+
+      &:hover{
+        cursor: pointer;
+      }
+      &:active{
+        transform: scale(.95);
+      }
+    }
+  }
+
+}
+
+
+}
+

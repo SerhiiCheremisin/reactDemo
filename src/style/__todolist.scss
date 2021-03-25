@@ -1,49 +1,159 @@
-form{
-  display: flex;
-  justify-content: center;
-  margin-top:10%;
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px) {
+  form{
 
-   input{
-     height: 5rem;
-     width: 50rem;
-     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top:10%;
+    flex-direction: column;
+
+    input{
+      height: 8rem;
+      width: 100%;
+      font-size: 3rem;
+
+    }
+    button{
+      margin: 5% 30%;
+      width: 40%;
+      height: 7rem;
+      font-size: 2.5rem;
+      background-image: linear-gradient(to right, teal , #003380);
+      color: aliceblue;
+
+    }
+
+  }
+  .tasks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: 1%;
+    li{
+      display: flex;
+      font-size: 5rem;
+    }
 
   }
 
-   button{
-     margin-left: 1rem;
-     width: 10rem;
-     font-size: 1.5rem;
-     background-image: linear-gradient(to right, teal , #003380);
-     color: aliceblue;
+  .importantTask{
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  form{
+
+    display: flex;
+    justify-content: center;
+    margin-top:10%;
+    flex-direction: column;
+
+    input{
+      height: 8rem;
+      width: 100%;
+      font-size: 3rem;
+
+    }
+    button{
+      margin: 5% 30%;
+      width: 40%;
+      height: 7rem;
+      font-size: 2.5rem;
+      background-image: linear-gradient(to right, teal , #003380);
+      color: aliceblue;
+
+    }
+
+  }
+  .tasks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: 1%;
+    li{
+      display: flex;
+      font-size: 5rem;
+    }
+
+  }
+
+  .importantTask{
+    color: red;
+    font-weight: bold;
+  }
+}
+
+
+@media only screen
+and (min-width : 1025px) {
+// .dark-theme{
+//   background-color: black;
+//   color: white;
+//   height: 90vh;
+//   padding-top: 2%;
+//
+//}
+//  .light-theme{
+//    background-color: white;
+//    color: black;
+//    height: 90vh;
+//    padding-top: 2%;
+//  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+
+    input{
+      height: 5rem;
+      width: 50rem;
+      font-size: 3rem;
+
+    }
+
+    button{
+      margin-left: 1rem;
+      width: 10rem;
+      font-size: 1.5rem;
+      background-image: linear-gradient(to right, teal , #003380);
+      color: aliceblue;
       &:hover{
         cursor: pointer;
         transition: all .4s ease;
         transform: scale(1);
-   }
+      }
       &:active{
         transform: scale(0.9);
       }
 
-  }
+    }
 
-}
-.tasks{
-  display: flex;
-  flex-direction: column;
-  margin-left: 40%;
-  margin-top: 1%;
-  li{
+  }
+  .tasks{
     display: flex;
-    font-size: 4rem;
+    flex-direction: column;
+    margin-left: 40%;
+
+    li{
+      display: flex;
+      font-size: 4rem;
+    }
+
   }
 
+  .importantTask{
+    color: red;
+    font-weight: bold;
+  }
 }
 
-.importantTask{
-  color: red;
-  font-weight: bold;
-}
+
 
 
 

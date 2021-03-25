@@ -1,10 +1,10 @@
 import React from 'react'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import TaskList from "./__taskList";
 
-function ToDoList() {
+function ToDoList({darkTheme,lightTheme}) {
 
- const [task, setTask] = useState([])
+ const [task, setTask] = useState(JSON.parse(localStorage.getItem("tasks")) || [])
  const [tempTask, setTempTask] = useState('');
 
  const formHandler = (e) =>{
@@ -12,14 +12,12 @@ function ToDoList() {
      if (tempTask === ''){
          return
      }
-
      const newTask = [{task:tempTask,id:task.length,isImportant:false}];
      const newState = task.concat(newTask);
      setTask(newState);
      setTempTask('')
-
+     localStorage.setItem("tasks", JSON.stringify(task));
     }
-
 
 
  const inputHandler = (e) =>{
@@ -32,9 +30,10 @@ function ToDoList() {
      let newArr = task.slice();
      newArr.map((el,idx) =>{
          if(el.id === e){
-             let logic = el.isImportant ? false: true;
+             let logic = !el.isImportant;
              el.isImportant = logic;
              setTask(newArr);
+             localStorage.setItem("tasks", JSON.stringify(task));
 
          }
      })
@@ -47,12 +46,12 @@ function ToDoList() {
      const after = task.slice(e+1);
      const newState = [...before, ...after];
      setTask(newState)
-
-
+     localStorage.setItem("tasks", JSON.stringify(task));
 
 }
+
     return(
-        <>
+        <div className={lightTheme === true ? "light-theme" : "dark-theme"}>
             <ul className="tasks">
                 <TaskList
                     task={task}
@@ -65,7 +64,7 @@ function ToDoList() {
                 <button>Add a task</button>
             </form>
 
-            </>
+            </div>
     )
 }
 

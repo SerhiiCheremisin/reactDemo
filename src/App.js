@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import './style/styles.css'
 import ToDoList from "./Components/__todoList";
@@ -13,8 +13,14 @@ import Resume from "./Components/__resume";
 
 
 function App () {
-const [lightTheme, setLightTheme] = useState(true);
-const [darkTheme, setDarkTheme] = useState(false);
+    const [lightTheme, setLightTheme] = useState(JSON.parse(localStorage.getItem("light-theme")));
+    const [darkTheme, setDarkTheme] = useState(JSON.parse(localStorage.getItem("dark-theme")));
+
+useEffect(() => {
+    localStorage.setItem("light-theme", JSON.stringify(lightTheme));
+    localStorage.setItem("dark-theme", JSON.stringify(darkTheme));
+    }, [lightTheme, darkTheme])
+
 
 const darkOn = (e) => {
     setLightTheme(false);

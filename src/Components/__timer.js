@@ -8,19 +8,23 @@ const [timerItem, setTimerItem] = useState('');
 const [timerList, setTimerList] = useState(JSON.parse(localStorage.getItem("timer")) || []);
 const [today,setToday] = useState(new Date().toDateString());
 
+useEffect(() => {
+    localStorage.setItem("timer",JSON.stringify(timerList));
+},[timerList])
+
+
 const formHandler = (e) =>{
 e.preventDefault();
 if (timerItem === ''){
     const newTimer = [{name: today, onPause: false, isDeleted:false, seconds:0, minutes: 0, hours:0}];
     const newState = timerList.concat(newTimer);
     setTimerList(newState);
-    localStorage.setItem("timer",JSON.stringify(timerList));
-    } else {
+       } else {
     const newTimer = [{name: timerItem, onPause: false, isDeleted:false, seconds:0, minutes: 0, hours:0}];
     const newState = timerList.concat(newTimer);
     setTimerList(newState);
     setTimerItem('');
-    localStorage.setItem("timer",JSON.stringify(timerList));
+
 }
 
   }
@@ -33,8 +37,7 @@ const deleteHandler = (e) =>{
             const after = timerList.slice(idx+1);
             const newState = [...before,...after];
             setTimerList(newState);
-            localStorage.setItem("timer",JSON.stringify(timerList));
-        }
+                    }
     })
 }
 
@@ -48,8 +51,7 @@ let newArr = timerList.slice();
              el.onPause = true;
          }
           setTimerList(newArr);
-          localStorage.setItem("timer",JSON.stringify(timerList));
-      }
+               }
   })
     }
     const timerHandlerPlay = (e)=> {
@@ -61,14 +63,13 @@ let newArr = timerList.slice();
                     el.onPause = false;
                 }
                 setTimerList(newArr);
-                localStorage.setItem("timer",JSON.stringify(timerList));
-            }
+                           }
         })
     }
     const timerHandler =  () => {
         if (timerList === []){
 
-        }
+                }
         else{
             const newArr = timerList.slice();
             newArr.map((el,idx) => {
@@ -90,8 +91,7 @@ let newArr = timerList.slice();
                     let after = newArr.slice(idx+1);
                     let newState = [...before,...current,...after];
                     setTimerList(newState);
-                    localStorage.setItem("timer",JSON.stringify(timerList));
-                }
+                                   }
 
             })
         }
@@ -100,8 +100,7 @@ let newArr = timerList.slice();
 
     useEffect(()=>{
         let interval  = setInterval(timerHandler,1000)
-        console.log("timerlist has called");
-        return () => clearInterval(interval);
+               return () => clearInterval(interval);
     },[timerList]);
 
 

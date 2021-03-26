@@ -1,11 +1,16 @@
 import React from 'react'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import TaskList from "./__taskList";
 
 function ToDoList({darkTheme,lightTheme}) {
 
  const [task, setTask] = useState(JSON.parse(localStorage.getItem("tasks")) || [])
  const [tempTask, setTempTask] = useState('');
+
+useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(task));
+},[task])
+
 
  const formHandler = (e) =>{
      e.preventDefault();
@@ -15,9 +20,8 @@ function ToDoList({darkTheme,lightTheme}) {
      const newTask = [{task:tempTask,id:task.length,isImportant:false}];
      const newState = task.concat(newTask);
      setTask(newState);
-     setTempTask('')
-     localStorage.setItem("tasks", JSON.stringify(task));
-    }
+     setTempTask('');
+         }
 
 
  const inputHandler = (e) =>{
@@ -33,22 +37,17 @@ function ToDoList({darkTheme,lightTheme}) {
              let logic = !el.isImportant;
              el.isImportant = logic;
              setTask(newArr);
-             localStorage.setItem("tasks", JSON.stringify(task));
-
-         }
+             }
      })
  }
 
-
-
  const deleteTask = (e) => {
-     const before = task.slice(0,e);
-     const after = task.slice(e+1);
-     const newState = [...before, ...after];
-     setTask(newState)
-     localStorage.setItem("tasks", JSON.stringify(task));
+         const before = task.slice(0,e);
+         const after = task.slice(e+1);
+         const newState = [...before, ...after];
+         setTask(newState)
+          }
 
-}
 
     return(
         <div className={lightTheme === true ? "light-theme" : "dark-theme"}>

@@ -343,12 +343,12 @@ a {
   }
   .taskContainer .buttons {
     display: flex;
-    margin-left: -25%;
+    margin-left: -50%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
   .taskContainer .buttons .deleteTask {
-    width: 15rem;
+    width: 25rem;
     height: 5rem;
     font-size: 3rem;
     margin-right: 1rem;
@@ -358,7 +358,7 @@ a {
     transform: scale(1);
   }
   .taskContainer .buttons .makeAsImportant {
-    width: 15rem;
+    width: 25rem;
     height: 5rem;
     font-size: 3rem;
     background-image: linear-gradient(to right, teal, #003380);
@@ -381,12 +381,12 @@ a {
   }
   .taskContainer .buttons {
     display: flex;
-    margin-left: -5%;
+    margin-left: -30%;
     margin-top: 5%;
     margin-bottom: 5%;
   }
   .taskContainer .buttons .deleteTask {
-    width: 15rem;
+    width: 25rem;
     height: 5rem;
     font-size: 3rem;
     margin-right: 1rem;
@@ -396,7 +396,7 @@ a {
     transform: scale(1);
   }
   .taskContainer .buttons .makeAsImportant {
-    width: 15rem;
+    width: 25rem;
     height: 5rem;
     font-size: 3rem;
     background-image: linear-gradient(to right, teal, #003380);
@@ -471,7 +471,7 @@ a {
   .slider {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 35%;
   }
   .slider .left {
     width: 7rem;
@@ -533,7 +533,7 @@ a {
   .slider {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 20%;
   }
   .slider .left {
     width: 10rem;
@@ -697,7 +697,7 @@ a {
     height: 25%;
   }
   .calcWrapper .calculator .calculator__buttons button {
-    width: 18%;
+    width: 19%;
     margin: 1rem 1.8rem;
     height: 50%;
     font-size: 5rem;
@@ -917,25 +917,28 @@ a {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     width: 100%;
+    border-bottom: 1px solid red;
   }
   .li-timer .name {
-    font-size: 3rem;
+    color: red;
+    font-size: 4rem;
+    margin-right: 2rem;
   }
   .li-timer .timerValue {
     display: flex;
   }
   .li-timer .timerValue .hours {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-right: 2rem;
   }
   .li-timer .timerValue .minutes {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-right: 2rem;
   }
   .li-timer .timerValue .seconds {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-right: 2rem;
   }
   .li-timer .buttons-wrapper {
@@ -943,8 +946,8 @@ a {
     flex-direction: column;
   }
   .li-timer .buttons-wrapper button {
-    width: 5rem;
-    height: 3rem;
+    width: 6rem;
+    height: 6rem;
     outline: none;
     margin-right: 1rem;
     color: aliceblue;
@@ -968,21 +971,21 @@ a {
     padding: 3%;
   }
   .li-timer .name {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .li-timer .timerValue {
     display: flex;
   }
   .li-timer .timerValue .hours {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-right: 2rem;
   }
   .li-timer .timerValue .minutes {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-right: 2rem;
   }
   .li-timer .timerValue .seconds {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-right: 2rem;
   }
   .li-timer .buttons-wrapper {
@@ -991,7 +994,7 @@ a {
   }
   .li-timer .buttons-wrapper button {
     width: 5rem;
-    height: 3rem;
+    height: 5rem;
     outline: none;
     margin-right: 1rem;
     color: aliceblue;

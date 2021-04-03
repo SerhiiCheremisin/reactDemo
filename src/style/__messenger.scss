@@ -1,0 +1,554 @@
+
+///general styles
+
+h1{
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hav-not-red{
+  background-color: #d7d7e8;
+}
+
+.gender-male{
+  background-image: url('../icons/mars-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(139, 145, 221, 0.4);
+}
+.gender-female{
+  background-image: url('../icons/venus-solid.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(246, 87, 110, 0.4)
+}
+
+.messenger-male{
+  background-image: url('../icons/telegram-brands.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.messenger-female{
+  background-image: url('../icons/viber-brands.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.select-number{
+  color: blue;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+  span{
+    background-color: inherit;
+    font-size: 3rem;
+  }
+  .Messenger{
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+
+    .screen-wrapper{
+
+      form{
+        display: flex;
+        justify-content: center;
+        .input-table{
+          display: flex;
+          position: relative;
+          input{
+            padding-left: 1rem;
+            font-size: 2.5rem;
+            margin-left: 8rem;
+            width: 50rem;
+            height: 7rem;
+            outline: none;
+            border: none;
+            box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+            -webkit-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+            -moz-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+          }
+          .clear-button{
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            right: -10%;
+            top: -32%;
+            border-radius: 50%;
+            background-color: gray;
+            outline: none;
+            button{
+              outline: none;
+
+            }
+            i{
+              font-size: 3rem;
+              background-color: gray;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+          }
+          .search-icon{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            right: 15%;
+            top: 20%;
+            i{
+              font-size: 3rem;
+              color: blue;
+
+            }
+          }
+        }
+      }
+      .members-block{
+        display: flex;
+        flex-direction: column;
+        &--header{
+          vertical-align: center;
+          display: flex;
+          background-color: #eaf2ff;
+          margin-top: 2rem;
+          padding-left: 5rem;
+          font-size: 3rem;
+          button{
+            width: 1rem;
+            height: 1rem;
+            outline: none;
+            border: none;
+            margin-right: 5rem;
+            &:hover{
+              cursor: pointer;
+            }
+            i{
+              font-size: 4rem;
+            }
+          }
+
+        }
+        ul{
+          display: flex;
+          flex-direction: column;
+
+          padding: 1rem;
+          li{
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #a8a8d5;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            width: 100%;
+            .photo{
+              position: relative;
+              margin-left: 40%;
+              background-color: inherit;
+
+              .icon-gender{
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+              }
+              .icon-messenger{
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                left: 17%;
+                top: 60%;
+                border-radius: 50%;
+                background-color: #EAF2FF;
+                padding: .5rem;
+              }
+            }
+            .name-and-number{
+              background-color: inherit;
+              margin-top: 3rem;
+              .name{
+                background-color: inherit;
+                font-size: 3rem;
+                margin-left: 20%;
+              }
+              .number{
+                margin-top: 1rem;
+                background-color: inherit;
+                margin-left: 35%;
+              }
+            }
+
+            .text{
+              font-size: 2rem;
+              margin-top: 1rem;
+              color: #8B91DD;
+              background-color: inherit;
+            }
+            .time{
+              font-size: 3rem;
+              text-align: center;
+              color: #8E8E93;
+              background-color: inherit;
+            }
+            .date{
+              font-size: 3rem;
+              text-align: center;
+              width: 100%;
+              color: #8E8E93;
+              background-color: inherit;
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  span{
+    background-color: inherit;
+    font-size: 2rem;
+  }
+  .Messenger{
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+
+    .screen-wrapper{
+
+      form{
+        display: flex;
+        justify-content: center;
+        .input-table{
+          display: flex;
+          position: relative;
+          input{
+            padding-left: 1rem;
+            font-size: 2.5rem;
+            margin-left: 25%;
+            width: 60rem;
+            height: 5rem;
+            outline: none;
+            border: none;
+            box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+            -webkit-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+            -moz-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+          }
+          .clear-button{
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            right: 0;
+            top: -100%;
+            border-radius: 50%;
+            background-color: gray;
+            outline: none;
+            button{
+              outline: none;
+
+            }
+            i{
+              font-size: 3rem;
+              background-color: gray;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+          }
+          .search-icon{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            right: 22%;
+            top: 22%;
+            i{
+              font-size: 3rem;
+              color: blue;
+
+            }
+          }
+        }
+      }
+
+      .members-block{
+        display: flex;
+        flex-direction: column;
+        &--header{
+          vertical-align: center;
+          display: flex;
+          background-color: #eaf2ff;
+          margin-top: 2rem;
+          padding-left: 3rem;
+          font-size: 2rem;
+          button{
+            width: 1rem;
+            height: 1rem;
+            outline: none;
+            border: none;
+            margin-right: 1rem;
+            &:hover{
+              cursor: pointer;
+            }
+            i{
+              font-size: 2rem;
+            }
+          }
+
+        }
+        ul{
+          display: flex;
+          flex-direction: column;
+
+          padding: 1rem;
+          li{
+            display: flex;
+            border-bottom: 1px solid #a8a8d5;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+
+            .photo{
+              position: relative;
+              width: 25%;
+              background-color: inherit;
+
+              .icon-gender{
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                margin-left: 10rem;
+              }
+              .icon-messenger{
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                left: 32%;
+                top: 55%;
+                border-radius: 50%;
+                background-color: #EAF2FF;
+                padding: .5rem;
+              }
+            }
+            .name-and-number{
+              background-color: inherit;
+              width: 15%;
+              .name{
+                background-color: inherit;
+                font-size: 2rem;
+              }
+              .number{
+                margin-top: 1rem;
+                background-color: inherit;
+
+              }
+            }
+
+            .text{
+              font-size: 2rem;
+              width: 35%;
+              color: #8B91DD;
+              background-color: inherit;
+            }
+            .time{
+              font-size: 2rem;
+              text-align: center;
+              width: 10%;
+              color: #8E8E93;
+              background-color: inherit;
+            }
+            .date{
+              font-size: 2rem;
+              text-align: center;
+              width: 10%;
+              color: #8E8E93;
+              background-color: inherit;
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+@media only screen
+and (min-width : 1025px) {
+  span{
+    background-color: inherit;
+    font-size: 2rem;
+  }
+  .Messenger{
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+
+    .screen-wrapper{
+
+      form{
+        display: flex;
+        justify-content: center;
+        .input-table{
+          display: flex;
+          position: relative;
+          input{
+            padding-left: 1rem;
+            font-size: 2.5rem;
+            width: 50rem;
+            height: 3.5rem;
+            outline: none;
+            border: none;
+            box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+            -webkit-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+            -moz-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+          }
+          .clear-button{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            right: 15%;
+            top: 20%;
+            border-radius: 50%;
+            background-color: gray;
+            outline: none;
+            button{
+              outline: none;
+
+            }
+            i{
+              font-size: 1rem;
+              background-color: gray;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+          }
+          .search-icon{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            right: 5%;
+            top: 20%;
+            i{
+              font-size: 2rem;
+              color: blue;
+
+            }
+          }
+        }
+      }
+
+      .members-block{
+        display: flex;
+        flex-direction: column;
+        &--header{
+          vertical-align: center;
+          display: flex;
+          background-color: #eaf2ff;
+          margin-top: 2rem;
+          padding-left: 3rem;
+          font-size: 2rem;
+          button{
+            width: 1rem;
+            height: 1rem;
+            outline: none;
+            border: none;
+            margin-right: 1rem;
+            &:hover{
+              cursor: pointer;
+            }
+            i{
+              font-size: 2rem;
+            }
+          }
+
+        }
+        ul{
+          display: flex;
+          flex-direction: column;
+
+          padding: 1rem;
+          li{
+            display: flex;
+            border-bottom: 1px solid #a8a8d5;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+
+            .photo{
+              position: relative;
+              width: 25%;
+              background-color: inherit;
+
+              .icon-gender{
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                margin-left: 10rem;
+              }
+              .icon-messenger{
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                left: 32%;
+                top: 55%;
+                border-radius: 50%;
+                background-color: #EAF2FF;
+                padding: .5rem;
+              }
+            }
+            .name-and-number{
+              background-color: inherit;
+              width: 15%;
+              .name{
+                background-color: inherit;
+                font-size: 2rem;
+              }
+              .number{
+                margin-top: 1rem;
+                background-color: inherit;
+
+              }
+            }
+
+            .text{
+              font-size: 2rem;
+              width: 35%;
+              color: #8B91DD;
+              background-color: inherit;
+            }
+            .time{
+              font-size: 2rem;
+              text-align: center;
+              width: 10%;
+              color: #8E8E93;
+              background-color: inherit;
+            }
+            .date{
+              font-size: 2rem;
+              text-align: center;
+              width: 10%;
+              color: #8E8E93;
+              background-color: inherit;
+            }
+
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+
+
+
+

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import TimerList from "./__timerList";
+import TimerList from "./__TimerList";
 
 
 function Timer({darkTheme,lightTheme}) {

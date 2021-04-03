@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "Dan Brown",
+    "Country": "Norway",
+    "shotSpeed" : 5,
+    "shotAccuracy" : 88,
+    "points": 544
+
+  },
+  {
+    "Name": "Jesus Hesus",
+    "Country": "Romonia",
+    "shotSpeed" : 6,
+    "shotAccuracy" : 76,
+    "points": 530
+
+  },
+  {
+    "Name": "Igor Stoichikov",
+    "Country": "Serbia",
+    "shotSpeed" : 2,
+    "shotAccuracy" : 66,
+    "points": 104
+
+  },
+  {
+    "Name": "Vasyliy Molchanov",
+    "Country": "Ukraine",
+    "shotSpeed" : 7,
+    "shotAccuracy" : 96,
+    "points": 666
+
+  },
+  {
+    "Name": "Martin Edegor",
+    "Country": "Sweeden",
+    "shotSpeed" : 7,
+    "shotAccuracy" : 95,
+    "points": 664
+
+  },
+  {
+    "Name": "Martin Edegor",
+    "Country": "Sweeden",
+    "shotSpeed" : 4,
+    "shotAccuracy" : 82,
+    "points": 520
+
+  },
+  {
+    "Name": "Yonas Tatcher",
+    "Country": "Germany",
+    "shotSpeed" : 5,
+    "shotAccuracy" : 80,
+    "points": 510
+
+  },
+  {
+    "Name": "Paul Simons",
+    "Country": "Denmark",
+    "shotSpeed" : 4,
+    "shotAccuracy" : 80,
+    "points": 500
+
+  },
+  {
+    "Name": "Donald Clurc",
+    "Country": "Finland",
+    "shotSpeed" : 3,
+    "shotAccuracy" : 78,
+    "points": 488
+
+  },
+  {
+    "Name": "Anatoliy Svirepiy",
+    "Country": "Belarus",
+    "shotSpeed" : 5,
+    "shotAccuracy" : 76,
+    "points": 466
+
+  }
+]

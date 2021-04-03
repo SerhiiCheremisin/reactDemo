@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-import TaskList from "./__taskList";
+import TaskList from "./__TaskList";
 
 function ToDoList({darkTheme,lightTheme}) {
 

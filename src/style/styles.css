@@ -56,6 +56,10 @@ a {
   background-image: linear-gradient(to right, teal, #003380);
 }
 
+.selected-button {
+  background-color: red;
+}
+
 ::selection {
   background-color: teal;
 }
@@ -65,7 +69,7 @@ a {
     position: relative;
     display: flex;
     justify-content: center;
-    height: 14vh;
+    height: 25vh;
     align-items: center;
     background-image: linear-gradient(to right, teal, #003380);
   }
@@ -170,7 +174,7 @@ a {
   nav span {
     align-self: start;
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 33%;
   }
   nav span a {
@@ -187,7 +191,7 @@ a {
     width: 15rem;
     height: 9rem;
     position: absolute;
-    right: 10%;
+    right: 0;
     top: 5%;
     border-radius: 50%;
     background-image: linear-gradient(to right, teal, #003380);
@@ -1540,6 +1544,745 @@ a {
 }
 .resume-block .isClickable {
   cursor: pointer;
+}
+
+h1 {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hav-not-red {
+  background-color: #d7d7e8;
+}
+
+.gender-male {
+  background-image: url("../icons/mars-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(139, 145, 221, 0.4);
+}
+
+.gender-female {
+  background-image: url("../icons/venus-solid.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(246, 87, 110, 0.4);
+}
+
+.messenger-male {
+  background-image: url("../icons/telegram-brands.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.messenger-female {
+  background-image: url("../icons/viber-brands.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select-number {
+  color: blue;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  span {
+    background-color: inherit;
+    font-size: 3rem;
+  }
+
+  .Messenger {
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+  }
+  .Messenger .screen-wrapper form {
+    display: flex;
+    justify-content: center;
+  }
+  .Messenger .screen-wrapper form .input-table {
+    display: flex;
+    position: relative;
+  }
+  .Messenger .screen-wrapper form .input-table input {
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    margin-left: 8rem;
+    width: 50rem;
+    height: 7rem;
+    outline: none;
+    border: none;
+    box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+    -webkit-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+    -moz-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    right: -10%;
+    top: -32%;
+    border-radius: 50%;
+    background-color: gray;
+    outline: none;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button button {
+    outline: none;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button i {
+    font-size: 3rem;
+    background-color: gray;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button i:hover {
+    cursor: pointer;
+  }
+  .Messenger .screen-wrapper form .input-table .search-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 15%;
+    top: 20%;
+  }
+  .Messenger .screen-wrapper form .input-table .search-icon i {
+    font-size: 3rem;
+    color: blue;
+  }
+  .Messenger .screen-wrapper .members-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .Messenger .screen-wrapper .members-block--header {
+    vertical-align: center;
+    display: flex;
+    background-color: #eaf2ff;
+    margin-top: 2rem;
+    padding-left: 5rem;
+    font-size: 3rem;
+  }
+  .Messenger .screen-wrapper .members-block--header button {
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 5rem;
+  }
+  .Messenger .screen-wrapper .members-block--header button:hover {
+    cursor: pointer;
+  }
+  .Messenger .screen-wrapper .members-block--header button i {
+    font-size: 4rem;
+  }
+  .Messenger .screen-wrapper .members-block ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #a8a8d5;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo {
+    position: relative;
+    margin-left: 40%;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo .icon-gender {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo .icon-messenger {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 17%;
+    top: 60%;
+    border-radius: 50%;
+    background-color: #EAF2FF;
+    padding: 0.5rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number {
+    background-color: inherit;
+    margin-top: 3rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number .name {
+    background-color: inherit;
+    font-size: 3rem;
+    margin-left: 20%;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number .number {
+    margin-top: 1rem;
+    background-color: inherit;
+    margin-left: 35%;
+  }
+  .Messenger .screen-wrapper .members-block ul li .text {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #8B91DD;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .time {
+    font-size: 3rem;
+    text-align: center;
+    color: #8E8E93;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .date {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    color: #8E8E93;
+    background-color: inherit;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  span {
+    background-color: inherit;
+    font-size: 2rem;
+  }
+
+  .Messenger {
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+  }
+  .Messenger .screen-wrapper form {
+    display: flex;
+    justify-content: center;
+  }
+  .Messenger .screen-wrapper form .input-table {
+    display: flex;
+    position: relative;
+  }
+  .Messenger .screen-wrapper form .input-table input {
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    margin-left: 25%;
+    width: 60rem;
+    height: 5rem;
+    outline: none;
+    border: none;
+    box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+    -webkit-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+    -moz-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    top: -100%;
+    border-radius: 50%;
+    background-color: gray;
+    outline: none;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button button {
+    outline: none;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button i {
+    font-size: 3rem;
+    background-color: gray;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button i:hover {
+    cursor: pointer;
+  }
+  .Messenger .screen-wrapper form .input-table .search-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 22%;
+    top: 22%;
+  }
+  .Messenger .screen-wrapper form .input-table .search-icon i {
+    font-size: 3rem;
+    color: blue;
+  }
+  .Messenger .screen-wrapper .members-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .Messenger .screen-wrapper .members-block--header {
+    vertical-align: center;
+    display: flex;
+    background-color: #eaf2ff;
+    margin-top: 2rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block--header button {
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+  }
+  .Messenger .screen-wrapper .members-block--header button:hover {
+    cursor: pointer;
+  }
+  .Messenger .screen-wrapper .members-block--header button i {
+    font-size: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li {
+    display: flex;
+    border-bottom: 1px solid #a8a8d5;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo {
+    position: relative;
+    width: 25%;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo .icon-gender {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 10rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo .icon-messenger {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 32%;
+    top: 55%;
+    border-radius: 50%;
+    background-color: #EAF2FF;
+    padding: 0.5rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number {
+    background-color: inherit;
+    width: 15%;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number .name {
+    background-color: inherit;
+    font-size: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number .number {
+    margin-top: 1rem;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .text {
+    font-size: 2rem;
+    width: 35%;
+    color: #8B91DD;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .time {
+    font-size: 2rem;
+    text-align: center;
+    width: 10%;
+    color: #8E8E93;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .date {
+    font-size: 2rem;
+    text-align: center;
+    width: 10%;
+    color: #8E8E93;
+    background-color: inherit;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  span {
+    background-color: inherit;
+    font-size: 2rem;
+  }
+
+  .Messenger {
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+  }
+  .Messenger .screen-wrapper form {
+    display: flex;
+    justify-content: center;
+  }
+  .Messenger .screen-wrapper form .input-table {
+    display: flex;
+    position: relative;
+  }
+  .Messenger .screen-wrapper form .input-table input {
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    width: 50rem;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+    -webkit-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+    -moz-box-shadow: -1px 2px 16px -1px rgba(34, 60, 80, 0.41);
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 15%;
+    top: 20%;
+    border-radius: 50%;
+    background-color: gray;
+    outline: none;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button button {
+    outline: none;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button i {
+    font-size: 1rem;
+    background-color: gray;
+  }
+  .Messenger .screen-wrapper form .input-table .clear-button i:hover {
+    cursor: pointer;
+  }
+  .Messenger .screen-wrapper form .input-table .search-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 5%;
+    top: 20%;
+  }
+  .Messenger .screen-wrapper form .input-table .search-icon i {
+    font-size: 2rem;
+    color: blue;
+  }
+  .Messenger .screen-wrapper .members-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .Messenger .screen-wrapper .members-block--header {
+    vertical-align: center;
+    display: flex;
+    background-color: #eaf2ff;
+    margin-top: 2rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block--header button {
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+  }
+  .Messenger .screen-wrapper .members-block--header button:hover {
+    cursor: pointer;
+  }
+  .Messenger .screen-wrapper .members-block--header button i {
+    font-size: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li {
+    display: flex;
+    border-bottom: 1px solid #a8a8d5;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo {
+    position: relative;
+    width: 25%;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo .icon-gender {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 10rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .photo .icon-messenger {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 32%;
+    top: 55%;
+    border-radius: 50%;
+    background-color: #EAF2FF;
+    padding: 0.5rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number {
+    background-color: inherit;
+    width: 15%;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number .name {
+    background-color: inherit;
+    font-size: 2rem;
+  }
+  .Messenger .screen-wrapper .members-block ul li .name-and-number .number {
+    margin-top: 1rem;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .text {
+    font-size: 2rem;
+    width: 35%;
+    color: #8B91DD;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .time {
+    font-size: 2rem;
+    text-align: center;
+    width: 10%;
+    color: #8E8E93;
+    background-color: inherit;
+  }
+  .Messenger .screen-wrapper .members-block ul li .date {
+    font-size: 2rem;
+    text-align: center;
+    width: 10%;
+    color: #8E8E93;
+    background-color: inherit;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .Table {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+  }
+  .Table .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  .Table .main-wrapper .button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Table .main-wrapper .button-wrapper .sort {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper .button-wrapper button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 14rem;
+    height: 4rem;
+    font-size: 3rem;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+    transition: 0.4s ease;
+    transform: scale(1);
+  }
+  .Table .main-wrapper .button-wrapper button:hover {
+    cursor: pointer;
+    background-color: #61dafb;
+  }
+  .Table .main-wrapper .button-wrapper button:active {
+    transform: scale(0.95);
+  }
+  .Table .main-wrapper .button-wrapper form input {
+    width: 40rem;
+    font-size: 3rem;
+    height: 6rem;
+    padding-left: 1rem;
+    margin-top: -3.5rem;
+    margin-left: 12rem;
+  }
+  .Table .main-wrapper .button-wrapper form input:focus {
+    border: 1px solid green;
+    outline: none;
+  }
+  .Table .main-wrapper ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .Table .main-wrapper ul li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-bottom: 1px solid gray;
+  }
+  .Table .main-wrapper ul li .name {
+    font-size: 3rem;
+    width: 23rem;
+  }
+  .Table .main-wrapper ul li .country {
+    font-size: 3rem;
+    text-align: center;
+    width: 10rem;
+  }
+  .Table .main-wrapper ul li .rate-of-fire {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper ul li .shotAccuracy {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper ul li .points {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .Table {
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+  }
+  .Table .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+  .Table .main-wrapper .button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Table .main-wrapper .button-wrapper .sort {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper .button-wrapper button {
+    margin-left: 4rem;
+    margin-right: 8rem;
+    width: 18rem;
+    height: 5rem;
+    font-size: 3rem;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+    transition: 0.4s ease;
+    transform: scale(1);
+  }
+  .Table .main-wrapper .button-wrapper button:hover {
+    cursor: pointer;
+    background-color: #61dafb;
+  }
+  .Table .main-wrapper .button-wrapper button:active {
+    transform: scale(0.95);
+  }
+  .Table .main-wrapper .button-wrapper form input {
+    width: 50rem;
+    font-size: 3rem;
+    height: 6rem;
+    padding-left: 1rem;
+    margin-top: -3.5rem;
+    margin-left: 30rem;
+  }
+  .Table .main-wrapper .button-wrapper form input:focus {
+    border: 1px solid green;
+    outline: none;
+  }
+  .Table .main-wrapper ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .Table .main-wrapper ul li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-bottom: 1px solid gray;
+  }
+  .Table .main-wrapper ul li .name {
+    font-size: 3rem;
+    width: 23rem;
+  }
+  .Table .main-wrapper ul li .country {
+    font-size: 3rem;
+    text-align: center;
+    width: 10rem;
+  }
+  .Table .main-wrapper ul li .rate-of-fire {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper ul li .shotAccuracy {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper ul li .points {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .Table {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
+  .Table .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 5rem;
+  }
+  .Table .main-wrapper .button-wrapper {
+    display: flex;
+  }
+  .Table .main-wrapper .button-wrapper .sort {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper .button-wrapper button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 12rem;
+    height: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+    transition: 0.4s ease;
+    transform: scale(1);
+  }
+  .Table .main-wrapper .button-wrapper button:hover {
+    cursor: pointer;
+    background-color: #61dafb;
+  }
+  .Table .main-wrapper .button-wrapper button:active {
+    transform: scale(0.95);
+  }
+  .Table .main-wrapper .button-wrapper form input {
+    width: 30rem;
+    font-size: 2rem;
+    height: 4rem;
+    padding-left: 1rem;
+    margin-top: -3.5rem;
+    margin-left: 3rem;
+  }
+  .Table .main-wrapper .button-wrapper form input:focus {
+    border: 1px solid green;
+    outline: none;
+  }
+  .Table .main-wrapper ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .Table .main-wrapper ul li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-bottom: 1px solid gray;
+  }
+  .Table .main-wrapper ul li .name {
+    font-size: 3rem;
+    width: 23rem;
+  }
+  .Table .main-wrapper ul li .country {
+    font-size: 3rem;
+    text-align: center;
+    width: 10rem;
+  }
+  .Table .main-wrapper ul li .rate-of-fire {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper ul li .shotAccuracy {
+    font-size: 3rem;
+  }
+  .Table .main-wrapper ul li .points {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

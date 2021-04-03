@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Александр Алексадров",
+    "number": "0955555555",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "date": "11.11.2021",
+    "hours" : "12",
+    "minutes" : "25",
+    "gender": "male",
+    "isRed" : true
+  },
+  {
+    "name": "Мила Маркова",
+    "number": "0965555555",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "date": "11.11.2021",
+    "hours" : "11",
+    "minutes" : "25",
+    "gender": "female",
+    "isRed" : false
+  },
+  {
+    "name": "Антон Антонов",
+    "number": "0985555555",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "date": "11.11.2021",
+    "hours" : "9",
+    "minutes" : "25",
+    "gender": "male",
+    "isRed" : true
+  },
+  {
+    "name": "Ярослава Кирченко",
+    "number": "0995555555",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "date": "11.11.2021",
+    "hours" : "12",
+    "minutes" : "25",
+    "gender": "female",
+    "isRed" : false
+  }, {
+  "name": "Антов Власов",
+  "number": "0955555555",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "date": "11.11.2021",
+  "hours" : "8",
+  "minutes" : "30",
+  "gender": "male",
+  "isRed" : false
+}, {
+  "name": "Анна Пушкаш",
+  "number": "0955555555",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "date": "11.11.2021",
+  "hours" : "12",
+  "minutes" : "35",
+  "gender": "female",
+  "isRed" : true
+}, {
+  "name": "Валентин Путанин",
+  "number": "0505555555",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "date": "11.11.2021",
+  "hours" : "12",
+  "minutes" : "15",
+  "gender": "male",
+  "isRed" : false
+}, {
+  "name": "Александра Яма",
+  "number": "0565555555",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "date": "11.11.2021",
+  "hours" : "10",
+  "minutes" : "03",
+  "gender": "female",
+  "isRed" : false
+}, {
+  "name": "Никита Старозуб",
+  "number": "0955555555",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "date": "11.11.2021",
+  "hours" : "10",
+  "minutes" : "59",
+  "gender": "male",
+  "isRed" : false
+}
+]

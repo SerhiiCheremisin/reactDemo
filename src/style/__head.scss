@@ -6,7 +6,7 @@ nav{
     position: relative;
     display: flex;
     justify-content: center;
-    height: 14vh;
+    height: 25vh;
     align-items: center;
     background-image: linear-gradient(to right, teal , #003380);
 
@@ -118,7 +118,7 @@ nav{
     span{
       align-self: start;
       position: absolute;
-      left: 10%;
+      left: 5%;
       top: 33%;
       a{
         font-size: 3rem;
@@ -136,7 +136,7 @@ nav{
         width: 15rem;
         height: 9rem;
         position: absolute;
-        right: 10%;
+        right: 0;
         top:5%;
         border-radius: 50%;
         background-image: linear-gradient(to right, teal , #003380);

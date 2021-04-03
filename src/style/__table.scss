@@ -1,0 +1,264 @@
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px) {
+  .Table{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    .main-wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      padding-top: 5rem;
+      .button-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .sort{
+          font-size: 3rem;
+        }
+        button{
+          margin-left: 2rem;
+          margin-right: 2rem;
+          width: 14rem;
+          height: 4rem;
+          font-size: 3rem;
+          outline: none;
+          border: none;
+          border-radius: 5%;
+          transition: .4s ease;
+          transform: scale(1);
+          &:hover{
+            cursor: pointer;
+            background-color: #61dafb;
+          }
+          &:active{
+            transform: scale(0.95);
+          }
+        }
+        form{
+          input{
+            width: 40rem;
+            font-size: 3rem;
+            height: 6rem;
+            padding-left: 1rem;
+            margin-top: -3.5rem;
+            margin-left: 12rem;
+            &:focus{
+              border: 1px solid green;
+              outline: none;
+            }
+          }
+        }
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+
+        li{
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          margin-top: 3rem;
+          border-bottom: 1px solid gray;
+          .name{
+            font-size: 3rem;
+            width: 23rem;
+          }
+          .country{
+            font-size: 3rem;
+            text-align: center;
+            width: 10rem;
+          }
+          .rate-of-fire{
+            font-size: 3rem;
+          }
+          .shotAccuracy{
+            font-size: 3rem;
+          }
+          .points{
+            font-size: 3rem;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .Table{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    .main-wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      padding-top: 5rem;
+      .button-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .sort{
+          font-size: 3rem;
+        }
+        button{
+          margin-left: 4rem;
+          margin-right: 8rem;
+          width: 18rem;
+          height: 5rem;
+          font-size: 3rem;
+          outline: none;
+          border: none;
+          border-radius: 5%;
+          transition: .4s ease;
+          transform: scale(1);
+          &:hover{
+            cursor: pointer;
+            background-color: #61dafb;
+          }
+          &:active{
+            transform: scale(0.95);
+          }
+        }
+        form{
+          input{
+            width: 50rem;
+            font-size: 3rem;
+            height: 6rem;
+            padding-left: 1rem;
+            margin-top: -3.5rem;
+            margin-left: 30rem;
+            &:focus{
+              border: 1px solid green;
+              outline: none;
+            }
+          }
+        }
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+
+        li{
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          margin-top: 3rem;
+          border-bottom: 1px solid gray;
+          .name{
+            font-size: 3rem;
+            width: 23rem;
+          }
+          .country{
+            font-size: 3rem;
+            text-align: center;
+            width: 10rem;
+          }
+          .rate-of-fire{
+            font-size: 3rem;
+          }
+          .shotAccuracy{
+            font-size: 3rem;
+          }
+          .points{
+            font-size: 3rem;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen
+and (min-width : 1025px) {
+  .Table{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    .main-wrapper{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      padding-top: 5rem;
+      .button-wrapper{
+        display: flex;
+        .sort{
+          font-size: 3rem;
+        }
+        button{
+          margin-left: 2rem;
+          margin-right: 2rem;
+          width: 12rem;
+          height: 4rem;
+          font-size: 2rem;
+          outline: none;
+          border: none;
+          border-radius: 5%;
+          transition: .4s ease;
+          transform: scale(1);
+          &:hover{
+            cursor: pointer;
+            background-color: #61dafb;
+          }
+          &:active{
+            transform: scale(0.95);
+          }
+        }
+        form{
+          input{
+            width: 30rem;
+            font-size: 2rem;
+            height: 4rem;
+            padding-left: 1rem;
+            margin-top: -3.5rem;
+            margin-left: 3rem;
+            &:focus{
+              border: 1px solid green;
+              outline: none;
+            }
+          }
+        }
+      }
+      ul{
+        display: flex;
+        flex-direction: column;
+
+        li{
+          display: flex;
+          list-style: none;
+          justify-content: space-between;
+          margin-top: 3rem;
+          border-bottom: 1px solid gray;
+          .name{
+            font-size: 3rem;
+            width: 23rem;
+          }
+          .country{
+            font-size: 3rem;
+            text-align: center;
+            width: 10rem;
+          }
+          .rate-of-fire{
+            font-size: 3rem;
+          }
+          .shotAccuracy{
+            font-size: 3rem;
+          }
+          .points{
+            font-size: 3rem;
+          }
+
+        }
+      }
+    }
+  }
+}
+

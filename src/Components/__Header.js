@@ -11,7 +11,6 @@ function Header({darkOn, darkOff, lightTheme, darkTheme}) {
     <span><Link to="/resume">Resume</Link></span>
     <ul>
         <li><Link to="/todolist">To Do List</Link></li>
-        <li><Link to="/fetch">Fetch Demo</Link></li>
         <li><Link to="/calc">Calculator</Link></li>
         <li><Link to="/timer">Timer</Link></li>
         <li><Link to="/table">Table</Link></li>

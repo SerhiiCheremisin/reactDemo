@@ -42,14 +42,20 @@ a{
   color: white;
   height: 90vh;
   padding-top: 2%;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
+
+
 .light-theme{
   background-color: white;
   color: black;
   height: 90vh;
   padding-top: 2%;
 }
+
+
+
 
 .b-inactive{
   background-color: red;

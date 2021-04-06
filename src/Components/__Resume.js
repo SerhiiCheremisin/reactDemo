@@ -1,9 +1,30 @@
 import React from 'react';
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 
 function Resume({darkTheme,lightTheme}) {
     const [jobs,setJobs] = useState(true);
+
+
+ const myAge = () => {
+     let birthDate = new Date(1991,4,31);
+     let today = new Date();
+
+    if (today.getMonth() > birthDate.getMonth()){
+        return today.getFullYear() - birthDate.getFullYear();
+    } else if(today.getMonth() === birthDate.getMonth()) {
+        if (today.getDate() === birthDate.getDate()){
+            return today.getFullYear() - birthDate.getFullYear();
+        } else {
+            return today.getFullYear() - birthDate.getFullYear() - 1;
+        }
+    }
+    else{
+        return today.getFullYear() - birthDate.getFullYear() - 1;
+    }
+
+ }
+
 
 
     let hidden = jobs ? "hidden-jobs-wrapper--hidden":"hidden-jobs-wrapper";
@@ -67,7 +88,7 @@ function Resume({darkTheme,lightTheme}) {
                                 <i className="fas fa-map-marker-alt"></i> г. Херсон Украина
                             </div>
                             <div className="age">
-                                <i className="fas fa-male"></i> 29 лет
+                                <i className="fas fa-male"></i> {myAge()} лет
                             </div>
                         </div>
                         <div className="photo">

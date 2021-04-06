@@ -35,6 +35,8 @@ a {
   color: white;
   height: 90vh;
   padding-top: 2%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .light-theme {
@@ -1933,7 +1935,7 @@ h1 {
   .Table {
     display: flex;
     justify-content: center;
-    height: 75vh;
+    height: 90vh;
   }
   .Table .main-wrapper {
     display: flex;

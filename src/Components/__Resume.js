@@ -60,7 +60,7 @@ function Resume({darkTheme,lightTheme}) {
                         <ul>
                             <li>Html</li>
                             <li>Css</li>
-                            <li>Javascript, ReactJS</li>
+                            <li>Javascript, ReactJS , Next.js, Typescript</li>
                             <li>CMS: Joomla, OneBox, Modx, Wezom4.0, 1С Битрикс.</li>
                             <li>Visual Studio, Visual Studio Code, WebStorm</li>
                             <li>Счетчики метрик Google Analytics и Яндекс Метрика</li>
@@ -73,6 +73,7 @@ function Resume({darkTheme,lightTheme}) {
                             <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">naturecheremisin.zzz.com.ua</a></li>
                             <li><a target="_blank" rel="noreferrer" href="http://metinvestcheremisin.zzz.com.ua/">metinvestcheremisin.zzz.com.ua</a>/</li>
                             <li><a target="_blank" rel="noreferrer" href="http://cheremisintest.ho.ua/">cheremisintest.ho.ua</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Демо</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git данного демо </a></li>
                         </ul>
                     </div>

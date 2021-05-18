@@ -74,6 +74,7 @@ function Resume({darkTheme,lightTheme}) {
                             <li><a target="_blank" rel="noreferrer" href="http://metinvestcheremisin.zzz.com.ua/">metinvestcheremisin.zzz.com.ua</a>/</li>
                             <li><a target="_blank" rel="noreferrer" href="http://cheremisintest.ho.ua/">cheremisintest.ho.ua</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Демо</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://tsdemo.vercel.app/">TypeScript Demo </a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git данного демо </a></li>
                         </ul>
                     </div>

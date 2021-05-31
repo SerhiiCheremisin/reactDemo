@@ -58,8 +58,7 @@ function Resume({darkTheme,lightTheme}) {
                     <div className="wrap-block">Навыки</div>
                     <div className="skills u--lists">
                         <ul>
-                            <li>Html</li>
-                            <li>Css</li>
+                            <li>Html, CSS</li>
                             <li>Javascript, ReactJS , Next.js, Typescript</li>
                             <li>CMS: Joomla, OneBox, Modx, Wezom4.0, 1С Битрикс.</li>
                             <li>Visual Studio, Visual Studio Code, WebStorm</li>
@@ -70,9 +69,8 @@ function Resume({darkTheme,lightTheme}) {
                         </ul>
                         <div className="wrap-block">Еще парочка сайтов-примеров</div>
                         <ul>
-                            <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">naturecheremisin.zzz.com.ua</a></li>
-                            <li><a target="_blank" rel="noreferrer" href="http://metinvestcheremisin.zzz.com.ua/">metinvestcheremisin.zzz.com.ua</a>/</li>
-                            <li><a target="_blank" rel="noreferrer" href="http://cheremisintest.ho.ua/">cheremisintest.ho.ua</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">Лендинг с курсов</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://music-build.vercel.app/">Музыкальное приложение</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Демо</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://tsdemo.vercel.app/">TypeScript Demo </a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git данного демо </a></li>

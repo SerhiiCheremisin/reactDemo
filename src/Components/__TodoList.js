@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import TaskList from "./__TaskList";
+import {motion} from "framer-motion";
 
 function ToDoList({darkTheme,lightTheme}) {
 
@@ -50,7 +51,12 @@ useEffect(() => {
 
 
     return(
-        <div className={lightTheme === true ? "light-theme" : "dark-theme"}>
+        <motion.div className={lightTheme === true ? "light-theme" : "dark-theme"}
+        initial={{x:"100vw"}}
+        animate={{x:0}}
+        translation={{duration:.4}}
+        exit = {{x:"-100vw"}}
+        >
             <ul className="tasks">
                 <TaskList
                     task={task}
@@ -63,7 +69,7 @@ useEffect(() => {
                 <button>Add a task</button>
             </form>
 
-            </div>
+            </motion.div>
     )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
-
+import {motion} from "framer-motion";
 
 function Calc({darkTheme,lightTheme}) {
     const [temp, setTemp] = useState('');
@@ -93,7 +93,11 @@ let target = e.target.value;
 
 return(
    <div className = {lightTheme === true ? "light-theme" : "dark-theme"}>
-       <div className="calcWrapper">
+       <motion.div className="calcWrapper"
+                   initial={{y:-1000}}
+                   animate={{y:0}}
+                   exit = {{x:"-100vw"}}
+       >
            <div className="calculator">
                <div className="calculator__result">
                    <input className='resImp' value={result} disabled="disabled" type="text"/>
@@ -130,7 +134,7 @@ return(
                </div>
            </div>
 
-       </div>
+       </motion.div>
 
    </div>
 

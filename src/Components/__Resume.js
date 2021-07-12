@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
-
+import {motion,AnimatePresence} from "framer-motion";
 
 function Resume({darkTheme,lightTheme}) {
     const [jobs,setJobs] = useState(true);
@@ -25,8 +25,6 @@ function Resume({darkTheme,lightTheme}) {
 
  }
 
-
-
     let hidden = jobs ? "hidden-jobs-wrapper--hidden":"hidden-jobs-wrapper";
     const jobAppear = () =>{
         setJobs(false)
@@ -36,9 +34,17 @@ function Resume({darkTheme,lightTheme}) {
     }
 
     return (
-        <div className="resume">
+
+        <motion.div className="resume"
+         exit = {{x:"-100vw"}}>
+
+
             <div className="resume-block">
-                <div className="resume-block__left">
+                <motion.div className="resume-block__left"
+                            initial = {{x:-1000}}
+                            animate = {{x:0}}
+                            transition={{duration:.4}}
+                >
                     <div className="wrap-block"> Контакты</div>
                     <div className="contacts u--lists">
                         <ul>
@@ -69,16 +75,20 @@ function Resume({darkTheme,lightTheme}) {
                         </ul>
                         <div className="wrap-block">Еще парочка сайтов-примеров</div>
                         <ul>
-                            <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">Лендинг с курсов</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">Лендинг с курсов по CSS</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://music-build.vercel.app/">Музыкальное приложение</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Демо</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://tsdemo.vercel.app/">TypeScript Demo </a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git данного демо </a></li>
                         </ul>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className={lightTheme ? "resume-block__right light-theme" : "resume-block__right dark-theme"}>
+                <motion.div className={lightTheme ? "resume-block__right light-theme" : "resume-block__right dark-theme"}
+                initial={{x:1000}}
+                animate={{x:0}}
+                transition={{duration:.4}}
+                >
                     <div className="resume-block__right--top">
                         <div className="name">
                             <h1>Черемисин Сергей Александрович</h1>
@@ -94,13 +104,8 @@ function Resume({darkTheme,lightTheme}) {
                         <div className="photo">
                             <div className="photo-block">
                             </div>
-
                         </div>
-
-
-
                     </div>
-
                     <div onClick={jobAppear} className="wrap-block isClickable">Опыт работы <i className="fas fa-briefcase"></i> </div>
                     <div className="years">
                         24.07.2017 – Н.В
@@ -211,14 +216,11 @@ function Resume({darkTheme,lightTheme}) {
                         </div>
 
                     </div>
-
-
-
-
-                </div>
+                </motion.div>
             </div>
-        </div>
-    );
+        </motion.div>
+
+    )
 }
 
 export default Resume;

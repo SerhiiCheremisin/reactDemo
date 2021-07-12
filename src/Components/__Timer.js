@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import TimerList from "./__TimerList";
-
+import {motion} from "framer-motion";
 
 function Timer({darkTheme,lightTheme}) {
 
@@ -105,7 +105,12 @@ let newArr = timerList.slice();
 
 
         return(
-    <div className = {lightTheme === true ? "light-theme" : "dark-theme"}>
+    <motion.div className = {lightTheme === true ? "light-theme" : "dark-theme"}
+                initial = {{x:-1000}}
+                animate = {{x:0}}
+                transition={{duration:.4}}
+                exit={{x:"-100vw"}}
+    >
     <div className="timer-list">
             <ul>
 <TimerList
@@ -123,7 +128,7 @@ let newArr = timerList.slice();
         <button htmlFor="timer"><i className="fas fa-play-circle"></i></button>
 </form>
 
-        </div>
+        </motion.div>
 )
 }
 

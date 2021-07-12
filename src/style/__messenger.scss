@@ -482,6 +482,10 @@ and (min-width : 1025px) {
             padding-bottom: 2rem;
             padding-top: 2rem;
 
+            &:hover{
+              cursor: pointer;
+            }
+
             .photo{
               position: relative;
               width: 25%;

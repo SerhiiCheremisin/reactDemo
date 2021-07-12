@@ -7,12 +7,24 @@
       width: 100%;
       background-color: #003e79;
       flex-direction: column;
+    .wrap-block{
+         display: flex;
+         width: 100%;
+         justify-content: center;
+
+    }
+
       .u--lists{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         ul{
           display: flex;
           flex-direction: column;
-          margin: 5% 10%;
-
+          justify-content: center;
+          align-items: center;
+          margin: 3% 0;
 
           li{
             font-size: 3rem;
@@ -56,12 +68,14 @@
           display: flex;
           padding-left: 8rem;
           padding-top: 5rem;
+          width: 100%;
+          justify-content: center;
           .location{
             font-size: 3rem;
             i{
               font-size: 3rem;
               margin-right: 1.5rem;
-              margin-left: 1rem;
+
             }
           }
           .age{
@@ -80,10 +94,11 @@
           justify-content: center;
           border: none;
           height: 50rem;
-          width: 50rem;
-          margin: 5% 10%;
+          width: 100%;
+          margin-top: 3rem;
+          margin-bottom: 3rem;
           .photo-block{
-            width: 100%;
+            width: 50%;
             height: 100%;
             border-radius: 10%;
             background-image: url("../img/imgonline-com-ua-Resize-IEehRDT8OQ.jpg");
@@ -162,12 +177,7 @@
 
           }
 
-          .years{
-            display: flex;
-            margin-left: 42%;
-            font-size: 2rem;
-          }
-          .have-jobs{
+         .have-jobs{
             strong{
               font-size: 3rem;
             }
@@ -199,15 +209,14 @@
           flex-direction: column;
           margin: 5% 30%;
 
-
           li{
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: aliceblue;
             list-style: none;
             margin-bottom: 1rem;
             a{
               color: aliceblue;
-              font-size: 3rem;
+              font-size: 4rem;
               transition: .4s ease;
             }
             i{
@@ -238,6 +247,7 @@
         }
         .age-loc{
           display: flex;
+          justify-content: center;
           padding: 2% 27%;
           .location{
             font-size: 3rem;
@@ -262,10 +272,11 @@
           justify-content: center;
           border: none;
           height: 50rem;
-          width: 40rem;
-          margin: 0% 28%;
+          width: 100%;
+          margin-bottom: 3rem;
+
           .photo-block{
-            width: 100%;
+            width: 50%;
             height: 100%;
             border-radius: 10%;
             background-image: url("../img/imgonline-com-ua-Resize-IEehRDT8OQ.jpg");
@@ -344,12 +355,7 @@
 
           }
 
-          .years{
-            display: flex;
-            margin-left: 42%;
-            font-size: 2rem;
-          }
-          .have-jobs{
+         .have-jobs{
             strong{
               font-size: 3rem;
             }

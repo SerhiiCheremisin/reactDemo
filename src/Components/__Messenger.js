@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-
+import {motion} from "framer-motion";
 import MessengerList from "./__MessengerItem"
 
 function Messenger({lightTheme}) {
@@ -81,7 +81,11 @@ function Messenger({lightTheme}) {
 
     }
     return (
-        <div className={lightTheme === true ? "Messenger light-theme" : "Messenger dark-theme"}>
+        <motion.div className={lightTheme === true ? "Messenger light-theme" : "Messenger dark-theme"}
+                    initial = {{y:1000}}
+                    animate = {{y:0}}
+                    transition={{duration:.4}}
+                    exit={{x:"-100vw"}}>
             <div className="screen-wrapper">
                 <form onSubmit={formHandler} action="#" id="tele-form" className="tele-form" name="tele-form">
                     <div className="input-table">
@@ -111,7 +115,7 @@ function Messenger({lightTheme}) {
             </div>
 
 
-        </div>
+        </motion.div>
     );
 
 }

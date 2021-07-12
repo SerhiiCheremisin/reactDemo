@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import {motion,AnimatePresence} from "framer-motion";
 
 function TimerList({timerList, deleteHandler, timerHandlerStop, timerHandlerPlay}) {
 
@@ -7,10 +7,16 @@ function TimerList({timerList, deleteHandler, timerHandlerStop, timerHandlerPlay
 
     return(
       <>
+          <AnimatePresence>
           {timerList.map((el,idx) => {
-
               return (
-                  <li key={idx} className='li-timer'>
+                  <motion.li key={idx} className='li-timer'
+                             initial={{x:"-100vw"}}
+                             animate={{x:0}}
+                             translation={{duration:.4}}
+                             exit={{x:"100vw"}}
+                  >
+
                       <div className="name">
                          {el.name}
                       </div>
@@ -32,13 +38,15 @@ function TimerList({timerList, deleteHandler, timerHandlerStop, timerHandlerPlay
                             deleteHandler(idx);
                         } }><i className="fas fa-trash-alt"></i></button>
                     </div>
-                  </li>
+                  </motion.li>
+
 
               )
 
           })
 
           }
+          </AnimatePresence>
       </>
       )
 }

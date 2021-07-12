@@ -1,9 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Switch, useLocation} from 'react-router-dom';
 import './style/styles.css'
-
-
-
 import ToDoList from "./Components/__TodoList";
 import Header from "./Components/__Header";
 import Calc from "./Components/__Calc";
@@ -13,7 +10,7 @@ import Timer from "./Components/__Timer";
 import Resume from "./Components/__Resume";
 import Table from "./Components/__Table";
 import Messenger from "./Components/__Messenger";
-
+import {AnimatePresence} from "framer-motion";
 
 function App () {
     const [lightTheme, setLightTheme] = useState(JSON.parse(localStorage.getItem("light-theme")));
@@ -24,6 +21,7 @@ useEffect(() => {
     localStorage.setItem("dark-theme", JSON.stringify(darkTheme));
     }, [lightTheme, darkTheme])
 
+const location = useLocation()
 
 const darkOn = (e) => {
     setLightTheme(false);
@@ -36,14 +34,16 @@ const darkOff = (e) => {
     }
 
     return(
-        <BrowserRouter>
+
             <React.StrictMode>
                 <Header
                     darkOn = {darkOn}
                     darkOff = {darkOff}
+                    lightTheme = {lightTheme}
+                    darkTheme = {darkTheme}
                 />
-
-                <Switch>
+                <AnimatePresence exitBeforeEnter>
+                <Switch location={location} key={location.key}  >
                     <Route exact path="/resume">
                         <Resume
                             lightTheme = {lightTheme}
@@ -86,8 +86,9 @@ const darkOff = (e) => {
                             darkTheme = {darkTheme}/>
                     </Route>
                 </Switch>
+                </AnimatePresence>
             </React.StrictMode>
-        </BrowserRouter>
+
     )
  }
 

@@ -1,6 +1,6 @@
 import React , {useEffect,useState} from "react";
 import TableList from "./__TableList";
-
+import {motion} from "framer-motion";
 
 function Table({lightTheme}) {
     const [table, setTable] = useState([]);
@@ -61,7 +61,11 @@ function Table({lightTheme}) {
         setSearch('')
     }
     return (
-        <div className={lightTheme === true ? "Table light-theme" : "Table dark-theme"}>
+        <motion.div className={lightTheme === true ? "Table light-theme" : "Table dark-theme"}
+                    initial = {{x:1000}}
+                    animate = {{x:0}}
+                    transition={{duration:.4}}
+                    exit={{x:"-100vw"}}>
             <div className="main-wrapper">
                 <div className="button-wrapper">
                     <div className="sort">Sort by</div>
@@ -87,7 +91,7 @@ function Table({lightTheme}) {
                     />
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

@@ -107,8 +107,9 @@ and (max-device-width : 1024px) {
           font-size: 3rem;
         }
         button{
-          margin-left: 4rem;
-          margin-right: 8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 18rem;
           height: 5rem;
           font-size: 3rem;
@@ -126,13 +127,15 @@ and (max-device-width : 1024px) {
           }
         }
         form{
+          display: flex;
+
           input{
-            width: 50rem;
+            width: 100%;
             font-size: 3rem;
             height: 6rem;
             padding-left: 1rem;
             margin-top: -3.5rem;
-            margin-left: 30rem;
+
             &:focus{
               border: 1px solid green;
               outline: none;

@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import TaskList from "./__TaskList";
 import {motion} from "framer-motion";
 
-function ToDoList({darkTheme,lightTheme}) {
+function ToDoList({darkTheme,lightTheme, ruTheme}) {
 
  const [task, setTask] = useState(JSON.parse(localStorage.getItem("tasks")) || [])
  const [tempTask, setTempTask] = useState('');
@@ -49,28 +49,55 @@ useEffect(() => {
          setTask(newState)
           }
 
-
+if (ruTheme) {
     return(
         <motion.div className={lightTheme === true ? "light-theme" : "dark-theme"}
-        initial={{x:"100vw"}}
-        animate={{x:0}}
-        translation={{duration:.4}}
-        exit = {{x:"-100vw"}}
+                    initial={{x:"100vw"}}
+                    animate={{x:0}}
+                    translation={{duration:.4}}
+                    exit = {{x:"-100vw"}}
         >
             <ul className="tasks">
                 <TaskList
                     task={task}
                     markAsImportant={markAsImportant}
                     deleteTask={deleteTask}
+                    ruTheme={ruTheme}
                 />
             </ul>
             <form onSubmit={formHandler} action="#" id="task" className="task">
-                <input onChange={inputHandler} type="text" placeholder="Type your task" value={tempTask}/>
-                <button>Add a task</button>
+                <input onChange={inputHandler} type="text" placeholder="Добавить задачу" value={tempTask}/>
+                <button>Добавить</button>
             </form>
 
-            </motion.div>
+        </motion.div>
     )
+}
+else {
+    return(
+        <motion.div className={lightTheme === true ? "light-theme" : "dark-theme"}
+                    initial={{x:"100vw"}}
+                    animate={{x:0}}
+                    translation={{duration:.4}}
+                    exit = {{x:"-100vw"}}
+        >
+            <ul className="tasks">
+                <TaskList
+                    task={task}
+                    markAsImportant={markAsImportant}
+                    deleteTask={deleteTask}
+                    ruTheme={ruTheme}
+                />
+            </ul>
+            <form onSubmit={formHandler} action="#" id="task" className="task">
+                <input onChange={inputHandler} type="text" placeholder="Add a task" value={tempTask}/>
+                <button>Add a Task</button>
+            </form>
+
+        </motion.div>
+    )
+}
+
 }
 
 export default ToDoList;

@@ -2,58 +2,114 @@ import React from 'react'
 import {motion,AnimatePresence} from "framer-motion";
 
 
-function TaskList({task, markAsImportant,deleteTask,}) {
+function TaskList({task, markAsImportant,deleteTask,ruTheme}) {
 
-    return(
-      <>
-          <AnimatePresence>
-    {task.map((el,idx) => {
+    if (ruTheme){
+        return(
+            <>
+                <AnimatePresence>
+                    {task.map((el,idx) => {
 
-         if (el.isImportant === true){
-             return (
-                <motion.div key={idx} className="taskContainer"
-                             initial={{x:"-100vw"}}
-                             animate={{x:0}}
-                             translation={{duration:.4}}
-                             exit={{x:"100vw"}}
-                 >
-                     <div className="liContainer">
+                        if (el.isImportant === true){
+                            return (
+                                <motion.div key={idx} className="taskContainer"
+                                            initial={{x:"-100vw"}}
+                                            animate={{x:0}}
+                                            translation={{duration:.4}}
+                                            exit={{x:"100vw"}}
+                                >
+                                    <div className="liContainer">
 
-                         <li className="importantTask" >
-                             {el.task}
-                         </li>
-                     </div>
-                     <div className="buttons">
-                         <button onClick={() => {deleteTask(idx)}} className="deleteTask">Delete</button>
-                         <button onClick={() => {markAsImportant(idx)}} className="makeAsImportant">Important</button>
-                     </div>
-                 </motion.div>
+                                        <li className="importantTask" >
+                                            {el.task}
+                                        </li>
+                                    </div>
+                                    <div className="buttons">
+                                        <button onClick={() => {deleteTask(idx)}} className="deleteTask">Удалить</button>
+                                        <button onClick={() => {markAsImportant(idx)}} className="makeAsImportant">Важное</button>
+                                    </div>
+                                </motion.div>
 
-             )
-         } else return (
+                            )
+                        } else return (
 
-                    <motion.div key={idx} className="taskContainer"
-                                initial={{x:"-100vw"}}
-                                animate={{x:0}}
-                                translation={{duration:.4}}
-                                exit={{x:"100vw"}}>
-                 <div className="liContainer">
-                     <li>
-                         {el.task}
-                     </li>
-                 </div>
-                 <div className="buttons">
-                     <button onClick={() => {deleteTask(idx)}} className="deleteTask">Delete</button>
-                     <button onClick={() => {markAsImportant(idx)}} className="makeAsImportant">Important</button>
-                 </div>
-             </motion.div>
+                            <motion.div key={idx} className="taskContainer"
+                                        initial={{x:"-100vw"}}
+                                        animate={{x:0}}
+                                        translation={{duration:.4}}
+                                        exit={{x:"100vw"}}>
+                                <div className="liContainer">
+                                    <li>
+                                        {el.task}
+                                    </li>
+                                </div>
+                                <div className="buttons">
+                                    <button onClick={() => {deleteTask(idx)}} className="deleteTask">Удалить</button>
+                                    <button onClick={() => {markAsImportant(idx)}} className="makeAsImportant">Важное</button>
+                                </div>
+                            </motion.div>
 
-         )
-    })}
-          </AnimatePresence>
-           </>
+                        )
+                    })}
+                </AnimatePresence>
+            </>
 
-    )
+        )
+    }
+    else {
+        return(
+            <>
+                <AnimatePresence>
+                    {task.map((el,idx) => {
+
+                        if (el.isImportant === true){
+                            return (
+                                <motion.div key={idx} className="taskContainer"
+                                            initial={{x:"-100vw"}}
+                                            animate={{x:0}}
+                                            translation={{duration:.4}}
+                                            exit={{x:"100vw"}}
+                                >
+                                    <div className="liContainer">
+
+                                        <li className="importantTask" >
+                                            {el.task}
+                                        </li>
+                                    </div>
+                                    <div className="buttons">
+                                        <button onClick={() => {deleteTask(idx)}} className="deleteTask">Delete</button>
+                                        <button onClick={() => {markAsImportant(idx)}} className="makeAsImportant">Important</button>
+                                    </div>
+                                </motion.div>
+
+                            )
+                        } else return (
+
+                            <motion.div key={idx} className="taskContainer"
+                                        initial={{x:"-100vw"}}
+                                        animate={{x:0}}
+                                        translation={{duration:.4}}
+                                        exit={{x:"100vw"}}>
+                                <div className="liContainer">
+                                    <li>
+                                        {el.task}
+                                    </li>
+                                </div>
+                                <div className="buttons">
+                                    <button onClick={() => {deleteTask(idx)}} className="deleteTask">Delete</button>
+                                    <button onClick={() => {markAsImportant(idx)}} className="makeAsImportant">Important</button>
+                                </div>
+                            </motion.div>
+
+                        )
+                    })}
+                </AnimatePresence>
+            </>
+
+        )
+    }
+
+
 
 
 }

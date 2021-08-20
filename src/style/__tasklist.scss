@@ -104,8 +104,9 @@
     .buttons{
       display: flex;
       .deleteTask{
-        width: 7rem;
+        width: 10rem;
         height: 3rem;
+        font-size: 1.3rem;
         margin-right: 1rem;
         background-image: linear-gradient(to right, teal , #003380);
         color: aliceblue;
@@ -113,6 +114,7 @@
         transform: scale(1);
         &:hover{
           cursor: pointer;
+          background-color: teal;
         }
         &:active{
           transform: scale(0.95);
@@ -120,12 +122,14 @@
       }
 
       .makeAsImportant{
-        width: 7rem;
+        width: 10rem;
         height: 3rem;
+        font-size: 1.3rem;
         background-image: linear-gradient(to right, teal , #003380);
         color: aliceblue;
         &:hover{
           cursor: pointer;
+          background-color: teal;
         }
         &:active{
           transform: scale(0.95);

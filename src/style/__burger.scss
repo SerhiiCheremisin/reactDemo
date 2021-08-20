@@ -6,6 +6,7 @@
   height: 10vh;
   background-color: #003380;
   position: relative;
+  cursor: pointer;
 
   .hidden-burger{
   display: none;
@@ -51,10 +52,24 @@
     }
   }
 
+  .active-lang{
+    color: red;
+  }
+
+  .lang-changer-burger{
+    display: flex;
+
+    input{
+      display: none;
+    }
+    label{
+      margin-right: .5rem;
+      font-size: 2rem;
+    }
+  }
 
   .burger{
   position: relative;
-
 
 
    .burger-label{

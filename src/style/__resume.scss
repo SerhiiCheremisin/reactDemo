@@ -204,10 +204,11 @@
       background-color: #003e79;
       flex-direction: column;
       .u--lists{
+        height: 15%;
         ul{
           display: flex;
           flex-direction: column;
-          margin: 5% 30%;
+          align-items: center;
 
           li{
             font-size: 3.5rem;
@@ -384,9 +385,8 @@
       background-color: #003e79;
       flex-direction: column;
       .u--lists{
-
+          height: 15%;
         ul{
-
           display: flex;
           flex-direction: column;
           margin-left: 20%;
@@ -425,7 +425,7 @@
       flex-direction: column;
       &--top{
         display: flex;
-        height: 25.72vh;
+        height: 33.2%;
         .name{
           width: 25%;
           padding-left: 4rem;

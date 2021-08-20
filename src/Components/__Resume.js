@@ -2,7 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react'
 import {motion,AnimatePresence} from "framer-motion";
 
-function Resume({darkTheme,lightTheme}) {
+function Resume({darkTheme,lightTheme,ruTheme}) {
     const [jobs,setJobs] = useState(true);
 
 
@@ -32,12 +32,11 @@ function Resume({darkTheme,lightTheme}) {
     const jobHidder = () =>{
         setJobs(true)
     }
-
+if (ruTheme){
     return (
 
         <motion.div className="resume"
-         exit = {{x:"-100vw"}}>
-
+                    exit = {{x:"-100vw"}}>
 
             <div className="resume-block">
                 <motion.div className="resume-block__left"
@@ -45,12 +44,12 @@ function Resume({darkTheme,lightTheme}) {
                             animate = {{x:0}}
                             transition={{duration:.4}}
                 >
-                    <div className="wrap-block"> Контакты</div>
+                    <div className="wrap-block">Контакты</div>
                     <div className="contacts u--lists">
                         <ul>
                             <li><i className="fas fa-phone-volume"></i>Телефон:<a href="tel:+380977978279"> +380977978279</a></li>
                             <li><i className="fas fa-envelope-open"></i>E-mail: <a href="mailto:sebanho@gmail.com">sebanho@gmail.com</a></li>
-                            <li><i className="fab fa-telegram-plane"></i>Телеграмм: <a href="https://t.me/SerjCheremisin" target="_blank">SerjCheremisin</a></li>
+                            <li><i className="fab fa-telegram-plane"></i>Телеграм: <a href="https://t.me/SerjCheremisin" target="_blank">SerjCheremisin</a></li>
                         </ul>
                     </div>
                     <div className="wrap-block">Языки</div>
@@ -69,7 +68,7 @@ function Resume({darkTheme,lightTheme}) {
                             <li>CMS: Joomla, OneBox, Modx, Wezom4.0, 1С Битрикс.</li>
                             <li>Visual Studio, Visual Studio Code, WebStorm</li>
                             <li>Счетчики метрик Google Analytics и Яндекс Метрика</li>
-                            <li>Умения работать с инструментами для вебмастеров от Google и Яндекс</li>
+                            <li>Работа с инструментами для вебмастеров от Google и Яндекс</li>
                             <li>Работа с биржами покупки ссылок</li>
                             <li>Начальные знания C++, C#, WForms, WPF</li>
                         </ul>
@@ -85,9 +84,9 @@ function Resume({darkTheme,lightTheme}) {
                 </motion.div>
 
                 <motion.div className={lightTheme ? "resume-block__right light-theme" : "resume-block__right dark-theme"}
-                initial={{x:1000}}
-                animate={{x:0}}
-                transition={{duration:.4}}
+                            initial={{x:1000}}
+                            animate={{x:0}}
+                            transition={{duration:.4}}
                 >
                     <div className="resume-block__right--top">
                         <div className="name">
@@ -221,6 +220,197 @@ function Resume({darkTheme,lightTheme}) {
         </motion.div>
 
     )
+}
+else {
+    return (
+
+        <motion.div className="resume"
+                    exit = {{x:"-100vw"}}>
+
+            <div className="resume-block">
+                <motion.div className="resume-block__left"
+                            initial = {{x:-1000}}
+                            animate = {{x:0}}
+                            transition={{duration:.4}}
+                >
+                    <div className="wrap-block">Contacts</div>
+                    <div className="contacts u--lists">
+                        <ul>
+                            <li><i className="fas fa-phone-volume"></i>Telephone:<a href="tel:+380977978279"> +380977978279</a></li>
+                            <li><i className="fas fa-envelope-open"></i>E-mail: <a href="mailto:sebanho@gmail.com">sebanho@gmail.com</a></li>
+                            <li><i className="fab fa-telegram-plane"></i>Telegram: <a href="https://t.me/SerjCheremisin" target="_blank">SerjCheremisin</a></li>
+                        </ul>
+                    </div>
+                    <div className="wrap-block">Languages</div>
+                    <div className="languages u--lists">
+                        <ul>
+                            <li>Russian and Ukrainian - Native</li>
+                            <li>English - Intermediate</li>
+                            <li>Spanish - Beginner</li>
+                        </ul>
+                    </div>
+                    <div className="wrap-block">Skills</div>
+                    <div className="skills u--lists">
+                        <ul>
+                            <li>Html, CSS</li>
+                            <li>Javascript, ReactJS , Next.js, Typescript</li>
+                            <li>CMS: Joomla, OneBox, Modx, Wezom4.0, 1С Bitrix.</li>
+                            <li>Visual Studio, Visual Studio Code, WebStorm</li>
+                            <li>Metric counters Google Analytics и Yandex Metric</li>
+                            <li>Work with tools for webmasters from Google and Yandex</li>
+                            <li>Working with link buying exchanges</li>
+                            <li>Initial knowledge of C++, C#, WForms, WPF</li>
+                        </ul>
+                        <div className="wrap-block">A couple more example sites</div>
+                        <ul>
+                            <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">Landing page from CSS courses</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://music-build.vercel.app/">Music app</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Demo</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://tsdemo.vercel.app/">TypeScript Demo </a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git of this demo</a></li>
+                        </ul>
+                    </div>
+                </motion.div>
+
+                <motion.div className={lightTheme ? "resume-block__right light-theme" : "resume-block__right dark-theme"}
+                            initial={{x:1000}}
+                            animate={{x:0}}
+                            transition={{duration:.4}}
+                >
+                    <div className="resume-block__right--top">
+                        <div className="name">
+                            <h1>Serhii Cheremisin</h1>
+                        </div>
+                        <div className="age-loc">
+                            <div className="location">
+                                <i className="fas fa-map-marker-alt"></i> Kherson Ukraine
+                            </div>
+                            <div className="age">
+                                <i className="fas fa-male"></i> {myAge()} years old
+                            </div>
+                        </div>
+                        <div className="photo">
+                            <div className="photo-block">
+                            </div>
+                        </div>
+                    </div>
+                    <div onClick={jobAppear} className="wrap-block isClickable">Work experience <i className="fas fa-briefcase"></i> </div>
+                    <div className="years">
+                        24.07.2017 – Now
+                    </div>
+                    <div className="have-jobs">
+                        <strong> Freelancer, SEO </strong>
+                        <ul>
+                            <li>Working with the structure and semantic core of the site</li>
+                            <li>Composing meta tags for the site</li>
+                            <li>Drawing up technical specifications for copywriters / programmers</li>
+                            <li>Working with analytics counters Google Analytics, Yandex Metrica</li>
+                            <li>Working with Google and Yandex webmasters</li>
+                            <li>Selection of donors and purchase of eternal links on exchanges: Miralinks, Gogetlinks. PRNews</li>
+                            <li>Setting up and maintaining PPC advertising for Google search engines</li>
+                        </ul>
+
+                    </div>
+                    <div className="years">
+                        07.02.2017 – 23.07.2017
+                    </div>
+                    <div className="have-jobs">
+                        <strong> SEO, web studio "Wezom"</strong>
+                        <ul>
+                            <li>Working with the structure and semantic core of the site</li>
+                            <li>Writing meta tags for the site</li>
+                            <li>Drawing up technical tasks for authors / programmers</li>
+                            <li>Working with analytics counters Google Analytics, Yandex Metrica</li>
+                            <li>Working with Google and Yandex webmasters</li>
+                        </ul>
+
+                    </div>
+
+                    <div className={hidden}>
+                        <div className="hidden-jobs">
+                            <button onClick={jobHidder} value="&times;" name="close-jobs" className="close-jobs">X</button>
+                            <div className="years">
+                                04.01.2016 – 11.01.2017
+
+                            </div>
+                            <div className="have-jobs">
+                                <strong>Content manager Internet store "evga kids"</strong>
+                                <ul>
+                                    <li>Filling the site with content</li>
+                                    <li>Testing the site at the development stage</li>
+                                    <li>Working with analytics counters Google Analytics, Yandex Metrica</li>
+                                    <li>Work as a website webmaster</li>
+                                </ul>
+
+                            </div>
+                            <div className="years">
+                                02.06 2015 – 30.12.2015
+
+                            </div>
+                            <div className="have-jobs">
+                                <strong>SEO, prodvigaem.com.ua </strong>
+                                <ul>
+                                    <li>Purchase and "cleanup" of eternal and rental advertising links for websites</li>
+                                    <li>Selection of sites for placing advertising links</li>
+                                    <li>Writing about link texts for advertising on sites</li>
+                                    <li>Selection of keywords for website promotion</li>
+                                    <li>Negotiating with webmasters of sites</li>
+                                    <li>Working with rental and perpetual link exchanges Sape, GoGetLinks</li>
+
+                                </ul>
+
+                            </div>
+                            <div className="years">
+                                01.02.2015 – 30.05.2015
+
+                            </div>
+                            <div className="have-jobs">
+                                <strong>Content manager, copywriter of an online sports nutrition store and an automobile forum. Rewriter
+                                    on various projects </strong>
+                                <ul>
+                                    <li>Writing review articles about cars, their components</li>
+                                    <li>Description of goods</li>
+                                    <li>Description of categories and subcategories of goods</li>
+                                    <li>Writing informative articles about sports, sports nutrition</li>
+                                </ul>
+
+                            </div>
+                            <div className="years">
+                                07.07.2014 – 23.01.2015
+
+                            </div>
+                            <div className="have-jobs">
+                                <strong>Online store "evga kids" SMM, targeted advertising manager</strong>
+                                <ul>
+                                    <li>Working with targeted advertising</li>
+                                    <li>Control over advertisements on the VK.com social network</li>
+                                    <li>Defining the target audience and working with it</li>
+                                    <li>Creation of ads for the social network VK.com</li>
+                                </ul>
+
+                            </div>
+                            <div className="years">
+                                20.12.2013 – 07.07.2014
+                            </div>
+                            <div className="have-jobs">
+                                <strong>Online store "Evga kids" - manager - consultant</strong>
+                                <ul>
+                                    <li>Negotiating, advising clients</li>
+                                    <li>Acceptance of orders, maintaining them until they are sent</li>
+                                    <li>Providing logistic information</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </motion.div>
+            </div>
+        </motion.div>
+
+    )
+}
+
 }
 
 export default Resume;

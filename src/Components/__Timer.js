@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import TimerList from "./__TimerList";
 import {motion} from "framer-motion";
 
-function Timer({darkTheme,lightTheme}) {
+function Timer({darkTheme,lightTheme,ruTheme}) {
 
 const [timerItem, setTimerItem] = useState('');
 const [timerList, setTimerList] = useState(JSON.parse(localStorage.getItem("timer")) || []);
@@ -118,6 +118,7 @@ let newArr = timerList.slice();
     deleteHandler = {deleteHandler}
     timerHandlerStop = {timerHandlerStop}
     timerHandlerPlay = {timerHandlerPlay}
+    ruTheme = {ruTheme}
 />
             </ul>
     </div>

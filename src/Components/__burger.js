@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Link} from "react-router-dom";
 import {motion,AnimatePresence} from "framer-motion";
 
-const Burger = ({ruTheme, enTheme,language}) => {
+const Burger = ({ruTheme, enTheme,language ,darkOff, light, dark,darkOn }) => {
 const [hidden, setHidden] = useState(false)
 
 const burgerStyle = hidden ? "burger-links" : "hidden-burger";
@@ -45,7 +45,16 @@ if (ruTheme){
                         <input type="checkbox" id="burger-radio" className="burger-radio"/>
                         <label onClick={() => setHidden(!hidden)} className='burger-label' htmlFor="burger-radio"></label>
                     </div>
-
+                    <div className="themeChanger">
+                        <div className="light">
+                            <input onChange={darkOff} type="radio" name="theme" id="themeLight" className="themeLight"/>
+                            <label htmlFor="themeLight"><i className={light}></i></label>
+                        </div>
+                        <div className="dark">
+                            <input onChange={darkOn} type="radio" name="theme" id="themeDark" className="themeDark"/>
+                            <label htmlFor="themeDark"><i className={dark}></i></label>
+                        </div>
+                    </div>
 
                 </motion.div>
             </AnimatePresence>

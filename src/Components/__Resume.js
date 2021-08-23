@@ -78,6 +78,7 @@ if (ruTheme){
                             <li><a target="_blank" rel="noreferrer" href="https://music-build.vercel.app/">Музыкальное приложение</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Демо</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://tsdemo.vercel.app/">TypeScript Demo </a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://games-and-quiz-build-sigma.vercel.app/">Игры на JS</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git данного демо </a></li>
                         </ul>
                     </div>
@@ -266,6 +267,7 @@ else {
                             <li><a target="_blank" rel="noreferrer" href="http://naturecheremisin.zzz.com.ua/">Landing page from CSS courses</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://music-build.vercel.app/">Music app</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://next-js-demo-sepia.vercel.app/">Next.js Demo</a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://games-and-quiz-build-sigma.vercel.app/">Games with JS</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://tsdemo.vercel.app/">TypeScript Demo </a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/SerhiiCheremisin/reactDemo.git">Git of this demo</a></li>
                         </ul>

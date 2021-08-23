@@ -1292,7 +1292,7 @@ a {
     font-size: 2rem;
     color: aliceblue;
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .resume-block__left .u--lists ul li a {
     color: aliceblue;

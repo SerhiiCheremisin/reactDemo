@@ -23,8 +23,10 @@ const en = enTheme? "active-theme" : "";
                  ruTheme = {ruTheme}
                  enTheme = {enTheme}
                  language = {language}
-
-
+                 darkOn = {darkOn}
+                 darkOff ={darkOff}
+                 lightTheme = {lightTheme}
+                 darkTheme = {darkTheme}
              />
          )
 
